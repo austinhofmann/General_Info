@@ -132,9 +132,9 @@ public class ViewChampions extends ActionBarActivity {
             		i = 41;
             	}else if(message.equals("Kennen")){
             		i = 42;
-            	}else if(message.equals("Kha'Zix")){
+            	}else if(message.equals("Kha Zix")){
             		i = 43;
-            	}else if(message.equals("Kog'Maw")){
+            	}else if(message.equals("Kog Maw")){
             		i = 44;
             	}else if(message.equals("LeBlanc")){
             		i = 45;
@@ -250,7 +250,7 @@ public class ViewChampions extends ActionBarActivity {
             		i = 100;
             	}else if(message.equals("Veigar")){
             		i = 101;
-            	}else if(message.equals("Vel'Koz")){
+            	}else if(message.equals("Vel Koz")){
             		i = 102;
             	}else if(message.equals("Vi")){
             		i = 103;
