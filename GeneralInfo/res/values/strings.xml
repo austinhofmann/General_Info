@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GeneralInfo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="champion_array">
+	<item>Aatrox</item>
+	<item>Ahri</item>
+	<item>Akali</item>
+	<item>Alistar</item>
+	<item>Amumu</item>
+	<item>Anivia</item>
+	<item>Annie</item>
+	<item>Ashe</item>
+	<item>Blitzcrank</item>
+	<item>Brand</item>
+	<item>Caitlyn</item>
+	<item>Cassiopeia</item>
+	<item>Cho Gath</item>
+	<item>Corki</item>
+	<item>Darius</item>
+	</string-array>
+
+</resources>
