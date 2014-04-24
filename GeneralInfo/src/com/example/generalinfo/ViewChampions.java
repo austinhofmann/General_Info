@@ -1267,6 +1267,361 @@ public class ViewChampions extends ActionBarActivity {
      			magicResText.setText("Magic Res.: " + magicRes + "(+" + magicResPerLevel + ")");
      			movespeedText.setText("Move Speed: " + movespeed);
      			
+     			
+     			
+//----------------------------------------------------------------------------------------------------------------------------------------    			
+//----------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------------------------            
+/*
+ * 	Spell(s) Info
+ *     Setting of Spell Info and Spell Info Text
+ *     
+ *     			
+ */
+     			
+     			//TextView spellsText = (TextView)findViewById(R.id.spellsDis);
+     			TextView spellName0Text = (TextView)findViewById(R.id.spellName0Dis);
+     			TextView spellName1Text = (TextView)findViewById(R.id.spellName1Dis);
+     			TextView spellName2Text = (TextView)findViewById(R.id.spellName2Dis);
+     			TextView spellName3Text = (TextView)findViewById(R.id.spellName3Dis);
+     			TextView spellName4Text = (TextView)findViewById(R.id.spellName4Dis);
+     			TextView spellName5Text = (TextView)findViewById(R.id.spellName5Dis);
+     			TextView spellName6Text = (TextView)findViewById(R.id.spellName6Dis);
+     			TextView spellName7Text = (TextView)findViewById(R.id.spellName7Dis);
+     			TextView spellName8Text = (TextView)findViewById(R.id.spellName8Dis);
+     			TextView spellName9Text = (TextView)findViewById(R.id.spellName9Dis);
+     			
+     			//Costs
+     			TextView spellCost0Text = (TextView)findViewById(R.id.spellCost0Dis);
+     			TextView spellCost1Text = (TextView)findViewById(R.id.spellCost1Dis);
+     			TextView spellCost2Text = (TextView)findViewById(R.id.spellCost2Dis);
+     			TextView spellCost3Text = (TextView)findViewById(R.id.spellCost3Dis);
+     			TextView spellCost4Text = (TextView)findViewById(R.id.spellCost4Dis);
+     			TextView spellCost5Text = (TextView)findViewById(R.id.spellCost5Dis);
+     			TextView spellCost6Text = (TextView)findViewById(R.id.spellCost6Dis);
+     			TextView spellCost7Text = (TextView)findViewById(R.id.spellCost7Dis);
+     			TextView spellCost8Text = (TextView)findViewById(R.id.spellCost8Dis);
+     		
+     			//Cooldown
+     			TextView spellCooldown0Text = (TextView)findViewById(R.id.spellCooldown0Dis);
+     			TextView spellCooldown1Text = (TextView)findViewById(R.id.spellCooldown1Dis);
+     			TextView spellCooldown2Text = (TextView)findViewById(R.id.spellCooldown2Dis);
+     			TextView spellCooldown3Text = (TextView)findViewById(R.id.spellCooldown3Dis);
+     			TextView spellCooldown4Text = (TextView)findViewById(R.id.spellCooldown4Dis);
+     			TextView spellCooldown5Text = (TextView)findViewById(R.id.spellCooldown5Dis);
+     			TextView spellCooldown6Text = (TextView)findViewById(R.id.spellCooldown6Dis);
+     			TextView spellCooldown7Text = (TextView)findViewById(R.id.spellCooldown7Dis);
+     			TextView spellCooldown8Text = (TextView)findViewById(R.id.spellCooldown8Dis);
+     			
+     			//Range
+     			TextView spellRange0Text = (TextView)findViewById(R.id.spellRange0Dis);
+     			TextView spellRange1Text = (TextView)findViewById(R.id.spellRange1Dis);
+     			TextView spellRange2Text = (TextView)findViewById(R.id.spellRange2Dis);
+     			TextView spellRange3Text = (TextView)findViewById(R.id.spellRange3Dis);
+     			TextView spellRange4Text = (TextView)findViewById(R.id.spellRange4Dis);
+     			TextView spellRange5Text = (TextView)findViewById(R.id.spellRange5Dis);
+     			TextView spellRange6Text = (TextView)findViewById(R.id.spellRange6Dis);
+     			TextView spellRange7Text = (TextView)findViewById(R.id.spellRange7Dis);
+     			TextView spellRange8Text = (TextView)findViewById(R.id.spellRange8Dis);
+
+     			//Description
+     			TextView spellDescription0Text = (TextView)findViewById(R.id.spellDescription0Dis);
+     			TextView spellDescription1Text = (TextView)findViewById(R.id.spellDescription1Dis);
+     			TextView spellDescription2Text = (TextView)findViewById(R.id.spellDescription2Dis);
+     			TextView spellDescription3Text = (TextView)findViewById(R.id.spellDescription3Dis);
+     			TextView spellDescription4Text = (TextView)findViewById(R.id.spellDescription4Dis);
+     			TextView spellDescription5Text = (TextView)findViewById(R.id.spellDescription5Dis);
+     			TextView spellDescription6Text = (TextView)findViewById(R.id.spellDescription6Dis);
+     			TextView spellDescription7Text = (TextView)findViewById(R.id.spellDescription7Dis);
+     			TextView spellDescription8Text = (TextView)findViewById(R.id.spellDescription8Dis);
+     			
+     			//Stats Per Level
+     			TextView spellStatsPerLevel0Text = (TextView)findViewById(R.id.spellStatsPerLevel0Dis);
+     			TextView spellStatsPerLevel1Text = (TextView)findViewById(R.id.spellStatsPerLevel1Dis);
+     			TextView spellStatsPerLevel2Text = (TextView)findViewById(R.id.spellStatsPerLevel2Dis);
+     			TextView spellStatsPerLevel3Text = (TextView)findViewById(R.id.spellStatsPerLevel3Dis);
+     			TextView spellStatsPerLevel4Text = (TextView)findViewById(R.id.spellStatsPerLevel4Dis);
+     			TextView spellStatsPerLevel5Text = (TextView)findViewById(R.id.spellStatsPerLevel5Dis);
+     			TextView spellStatsPerLevel6Text = (TextView)findViewById(R.id.spellStatsPerLevel6Dis);
+     			TextView spellStatsPerLevel7Text = (TextView)findViewById(R.id.spellStatsPerLevel7Dis);
+     			TextView spellStatsPerLevel8Text = (TextView)findViewById(R.id.spellStatsPerLevel8Dis);
+
+/*
+ * Initial Sets for Spells 
+ * 
+ */
+     			//Initialize Spell Names
+     			spellName0Text.setText("");
+     			spellName1Text.setText("");
+     			spellName2Text.setText("");
+     			spellName3Text.setText("");
+     			spellName4Text.setText("");
+     			spellName5Text.setText("");
+     			spellName6Text.setText("");
+     			spellName7Text.setText("");
+     			spellName8Text.setText("");
+     			
+     			//Initialize Spell Cost
+     			spellCost0Text.setText("");
+     			spellCost1Text.setText("");
+     			spellCost2Text.setText("");
+     			spellCost3Text.setText("");
+     			spellCost4Text.setText("");
+     			spellCost5Text.setText("");
+     			spellCost6Text.setText("");
+     			spellCost7Text.setText("");
+     			spellCost8Text.setText("");
+     			
+     			//Initialize Spell Cooldown
+     			spellCooldown0Text.setText("");
+     			spellCooldown1Text.setText("");
+     			spellCooldown2Text.setText("");
+     			spellCooldown3Text.setText("");
+     			spellCooldown4Text.setText("");
+     			spellCooldown5Text.setText("");
+     			spellCooldown6Text.setText("");
+     			spellCooldown7Text.setText("");
+     			spellCooldown8Text.setText("");
+     			
+     			//Initialize Spell Range
+     			spellRange0Text.setText("");
+     			spellRange1Text.setText("");
+     			spellRange2Text.setText("");
+     			spellRange3Text.setText("");
+     			spellRange4Text.setText("");
+     			spellRange5Text.setText("");
+     			spellRange6Text.setText("");
+     			spellRange7Text.setText("");
+     			spellRange8Text.setText("");
+     			
+     			//Initialize Spell Descriptions
+     			spellDescription0Text.setText("");
+     			spellDescription1Text.setText("");
+     			spellDescription2Text.setText("");
+     			spellDescription3Text.setText("");
+     			spellDescription4Text.setText("");
+     			spellDescription5Text.setText("");
+     			spellDescription6Text.setText("");
+     			spellDescription7Text.setText("");
+     			spellDescription8Text.setText("");
+     			
+     			//Initialize Spell Stats Per Level
+     			spellStatsPerLevel0Text.setText("");
+     			spellStatsPerLevel1Text.setText("");
+     			spellStatsPerLevel2Text.setText("");
+     			spellStatsPerLevel3Text.setText("");
+     			spellStatsPerLevel4Text.setText("");
+     			spellStatsPerLevel5Text.setText("");
+     			spellStatsPerLevel6Text.setText("");
+     			spellStatsPerLevel7Text.setText("");
+     			spellStatsPerLevel8Text.setText("");
+     			
+     			
+     			//Spells
+     			SpellInfo[] spells = new SpellInfo [champs.getChampList()[i].getSpells().length];
+     			//int numOfSpells = spells.length;
+     			for(int j = 0; j < spells.length; j++)
+     			{
+     				spells[j] = champs.getChampList()[i].getSpells()[j];
+     			}
+     			
+     			
+     			//Spell Name Loop/Setting
+     			int nameNum =0;
+     			String spellName = "";
+     			for(nameNum = 0; nameNum < spells.length; namNum++)
+     			{
+     				spellName = spells[nameNum].getSpellName();
+     				if(nameNum == 0){
+     					spellName0Text.setText(spellName);
+     				}else if(nameNum == 1){
+     					spellName1Text.setText(spellName);
+     				}else if(nameNum == 2){
+     					spellName2Text.setText(spellName);
+     				}else if(nameNum == 3){
+     					spellName3Text.setText(spellName);
+     				}else if(nameNum == 4){
+     					spellName4Text.setText(spellName);
+     				}else if(nameNum == 5){
+     					spellName5Text.setText(spellName);
+     				}else if(nameNum == 6){
+     					spellName6Text.setText(spellName);
+     				}else if(nameNum == 7){
+     					spellName7Text.setText(spellName);
+     				}else if(nameNum == 8){
+     					spellName8Text.setText(spellName);
+     				}
+     				spellName="";
+     			}
+     			
+     			
+     			
+     			//Spell Cost Loop/Setting
+     			int costNum = 0;
+     			String spellCost = "";
+     			for(costNum = 0; costNum < spells.length; costNum++)
+     			{
+     				spellCost = spells[costNum].getCost();
+     				if(!spellCost.equal("")){
+	     				if(costNum == 0){
+	     					spellCost0Text.setText("Cost: " +spellCost);
+	     				}else if(costNum == 1){
+	     					spellCost1Text.setText("Cost: " + spellCost);
+	     				}else if(costNum == 2){
+	     					spellCost2Text.setText("Cost: " + spellCost);
+	     				}else if(costNum == 3){
+	     					spellCost3Text.setText("Cost: " + spellCost);
+	     				}else if(costNum == 4){
+	     					spellCost4Text.setText("Cost: " + spellCost);
+	     				}else if(costNum == 5){
+	     					spellCost5Text.setText("Cost: " + spellCost);
+	     				}else if(costNum == 6){
+	     					spellCost6Text.setText("Cost: " + spellCost);
+	     				}else if(costNum == 7){
+	     					spellCost7Text.setText("Cost: " + spellCost);
+	     				}else if(costNum == 8){
+	     					spellCost8Text.setText("Cost: " + spellCost);
+	     				}
+     				}
+     			}
+     			
+     			
+     			//Spell Range Loop/Setting
+     			int rangeNum = 0;
+     			String spellRange = "";
+     			for(rangeNum = 0; rangeNum < spells.length; rangeNum++)
+     			{
+     				spellRange = spells[rangeNum].getSpellRange();
+     				if(!spellRange.equal("")){
+	     				if(rangeNum == 0){
+	     					spellRange0Text.setText("Range: " +spellRange);
+	     				}else if(RangeNum == 1){
+	     					spellRange1Text.setText("Range: " + spellRange);
+	     				}else if(RangeNum == 2){
+	     					spellRange2Text.setText("Range: " + spellRange);
+	     				}else if(RangeNum == 3){
+	     					spellRange3Text.setText("Range: " + spellRange);
+	     				}else if(RangeNum == 4){
+	     					spellRange4Text.setText("Range: " + spellRange);
+	     				}else if(RangeNum == 5){
+	     					spellRange5Text.setText("Range: " + spellRange);
+	     				}else if(RangeNum == 6){
+	     					spellRange6Text.setText("Range: " + spellRange);
+	     				}else if(RangeNum == 7){
+	     					spellRange7Text.setText("Range: " + spellRange);
+	     				}else if(RangeNum == 8){
+	     					spellRange8Text.setText("Range: " + spellRange);
+	     				}
+     				}
+     			}
+     			
+     			//Spell Cooldown Loop/Setting
+     			int cooldownNum = 0;
+     			String spellCooldown = "";
+     			for(cooldownNum = 0; cooldownNum < spells.length; cooldownNum++)
+     			{
+     				spellCooldown = spells[cooldownNum].getCoolDown();
+     				if(!spellCooldown.equal("")){
+	     				if(cooldownNum == 0){
+	     					spellCooldown0Text.setText("Cooldown: " +spellCooldown);
+	     				}else if(CooldownNum == 1){
+	     					spellCooldown1Text.setText("Cooldown: " + spellCooldown);
+	     				}else if(CooldownNum == 2){
+	     					spellCooldown2Text.setText("Cooldown: " + spellCooldown);
+	     				}else if(CooldownNum == 3){
+	     					spellCooldown3Text.setText("Cooldown: " + spellCooldown);
+	     				}else if(CooldownNum == 4){
+	     					spellCooldown4Text.setText("Cooldown: " + spellCooldown);
+	     				}else if(CooldownNum == 5){
+	     					spellCooldown5Text.setText("Cooldown: " + spellCooldown);
+	     				}else if(CooldownNum == 6){
+	     					spellCooldown6Text.setText("Cooldown: " + spellCooldown);
+	     				}else if(CooldownNum == 7){
+	     					spellCooldown7Text.setText("Cooldown: " + spellCooldown);
+	     				}else if(CooldownNum == 8){
+	     					spellCooldown8Text.setText("Cooldown: " + spellCooldown);
+	     				}
+     				}
+     			}
+     			
+     			//Spell Description Loop/Setting
+     			int descriptionNum = 0;
+     			String spellDescription = "";
+     			for(descriptionNum = 0; descriptionNum < spells.length; descriptionNum++)
+     			{
+     				for(int i = 0; i < spells[descriptionNum].getDescription().length; i++)
+     				{
+     					spellDescription += spells[descriptionNum].getDescription()[i];
+     					if(i != spells[descriptionNum].getDescription().length-1)
+     					{
+     						spellDescription += "\n";
+     					}
+     					
+     				}
+     				if(!spellDescription.equal("")){
+	     				if(descriptionNum == 0){
+	     					spellDescription0Text.setText(spellDescription);
+	     				}else if(DescriptionNum == 1){
+	     					spellDescription1Text.setText(spellDescription);
+	     				}else if(DescriptionNum == 2){
+	     					spellDescription2Text.setText(spellDescription);
+	     				}else if(DescriptionNum == 3){
+	     					spellDescription3Text.setText(spellDescription);
+	     				}else if(DescriptionNum == 4){
+	     					spellDescription4Text.setText(spellDescription);
+	     				}else if(DescriptionNum == 5){
+	     					spellDescription5Text.setText(spellDescription);
+	     				}else if(DescriptionNum == 6){
+	     					spellDescription6Text.setText(spellDescription);
+	     				}else if(DescriptionNum == 7){
+	     					spellDescription7Text.setText(spellDescription);
+	     				}else if(DescriptionNum == 8){
+	     					spellDescription8Text.setText(spellDescription);
+	     				}
+     				}
+     				spellDescription = "";
+     			}
+     			
+     			//Spell Stats Per Level Loop/Setting
+     			int statsPerLevelNum = 0;
+     			String spellStatsPerLevel = "";
+     			for(statsPerLevelNum = 0; statsPerLevelNum < spells.length; statsPerLevelNum++)
+     			{
+     				for(int i = 0; i < spells[statsPerLevelNum].getStatsPerLevel().length; i++)
+     				{
+     					spellStatsPerLevel += spells[statsPerLevelNum].getStatsPerLevel()[i];
+     					if(i != spells[statsPerLevelNum].getStatsPerLevel().length-1)
+     					{
+     						spellStatsPerLevel += "\n";
+     					}
+     					
+     				}
+     				if(!spellStatsPerLevel.equal("")){
+	     				if(statsPerLevelNum == 0){
+	     					spellStatsPerLevel0Text.setText(spellStatsPerLevel);
+	     				}else if(StatsPerLevelNum == 1){
+	     					spellStatsPerLevel1Text.setText(spellStatsPerLevel);
+	     				}else if(StatsPerLevelNum == 2){
+	     					spellStatsPerLevel2Text.setText(spellStatsPerLevel);
+	     				}else if(StatsPerLevelNum == 3){
+	     					spellStatsPerLevel3Text.setText(spellStatsPerLevel);
+	     				}else if(StatsPerLevelNum == 4){
+	     					spellStatsPerLevel4Text.setText(spellStatsPerLevel);
+	     				}else if(StatsPerLevelNum == 5){
+	     					spellStatsPerLevel5Text.setText(spellStatsPerLevel);
+	     				}else if(StatsPerLevelNum == 6){
+	     					spellStatsPerLevel6Text.setText( spellStatsPerLevel);
+	     				}else if(StatsPerLevelNum == 7){
+	     					spellStatsPerLevel7Text.setText(spellStatsPerLevel);
+	     				}else if(StatsPerLevelNum == 8){
+	     					spellStatsPerLevel8Text.setText(spellStatsPerLevel);
+	     				}
+     				}
+     				spellStatsPerLevel ="";
+     			}     			
+     			
+     			
+     			
              
      }
 
