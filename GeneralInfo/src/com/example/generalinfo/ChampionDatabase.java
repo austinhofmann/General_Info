@@ -5,15 +5,16 @@ public class ChampionDatabase {
 
 
 	private ChampionInfo[] champions = new ChampionInfo[118];
-
+	private SpellInfo[][] champSpells = new SpellInfo[118][];
+	private SpellDatabase spells = new SpellDatabase();
+	
 	public ChampionDatabase()
 	{
-		/*
 		for(int i = 0; i < champSpells.length; i++)
 		{
 			champSpells[i] = spells.getSpellArray()[i];
 		}
-		*/
+		
 		
 		
 		ChampionInfo Aatrox = new ChampionInfo();
@@ -28,7 +29,8 @@ public class ChampionDatabase {
 		Aatrox.setHealthInfo(395, 85, 5.75, 0.5);
 		Aatrox.setManaInfo(0, 0, 0, 0, "Health"); //Uses Health as resource
 		Aatrox.setMagicRes(30, 1.25);
-		//Aatrox.setSpells(champSpells[0]);
+		Aatrox.setSpells(champSpells[0]);
+		Aatrox.setAttributes(new int[] {20, 10, 10, 10, 0, 20, 0, 20, 10, 10});
 		champions[0] = Aatrox;
 
 		ChampionInfo Ahri = new ChampionInfo();
@@ -43,7 +45,8 @@ public class ChampionDatabase {
 		Ahri.setHealthInfo(360, 80 , 5.5, 0.6);
 		Ahri.setManaInfo(250, 50, 7, 0.6, "Mana");
 		Ahri.setMagicRes(30, 0);
-		//Ahri.setSpells(champSpells[1]);
+		Ahri.setSpells(champSpells[1]);
+		Ahri.setAttributes(new int[] {10, 10, 20, 20, 0, 0, 0, 0, 10, 10});
 		champions[1] = Ahri;
 
 		ChampionInfo Akali = new ChampionInfo();
@@ -58,7 +61,8 @@ public class ChampionDatabase {
 		Akali.setHealthInfo(445, 85, 7.25, 0.65);
 		Akali.setManaInfo(200, 0, 50, 0, "Energy"); //Uses Energy as resource
 		Akali.setMagicRes(30, 1.25);
-		//Akali.setSpells(champSpells[2]);
+		Akali.setSpells(champSpells[2]);
+		Akali.setAttributes(new int[] {20, 10, 0, 20, 0, 0, 0, 0, 0, 10});
 		champions[2] = Akali;
 
 		ChampionInfo Alistar = new ChampionInfo();
@@ -72,8 +76,9 @@ public class ChampionDatabase {
 		Alistar.setMoveSpeed(330);
 		Alistar.setHealthInfo(442, 102, 7.25, 0.85);
 		Alistar.setManaInfo(215, 38, 6.45, 0.45, "Mana");
-	        Alistar.setMagicRes(30, 1.25);
-		//Alistar.setSpells(champSpells[3]);
+	    	Alistar.setMagicRes(30, 1.25);
+		Alistar.setSpells(champSpells[3]);
+		Alistar.setAttributes(new int[] {0, 20, 10, 20, 10, 0, 0, 0, 10, 10});
 		champions[3] = Alistar;
 
 		ChampionInfo Amumu = new ChampionInfo();
@@ -88,7 +93,8 @@ public class ChampionDatabase {
 		Amumu.setHealthInfo(472, 84, 7.45, 0.85);
 		Amumu.setManaInfo(220, 40, 6.5, 0.525, "Mana");
 		Amumu.setMagicRes(30, 1.25);
-		//Amumu.setSpells(champSpells[4]);
+		Amumu.setSpells(champSpells[4]);
+		Amumu.setAttributes(new int[] {20, 0, 0, 20, 20, 0, 20, 0, 0, 10});
 		champions[4] = Amumu;
 
 		ChampionInfo Anivia = new ChampionInfo();
@@ -102,8 +108,9 @@ public class ChampionDatabase {
 		Anivia.setMoveSpeed(325);
 		Anivia.setHealthInfo(350, 70, 4.65, 0.55);
 		Anivia.setManaInfo(257, 53, 7, 0.6, "Mana");
-	        Anivia.setMagicRes(30, 0);
-		//Anivia.setSpells(champSpells[5]);
+	   	Anivia.setMagicRes(30, 0);
+		Anivia.setSpells(champSpells[5]);
+		Anivia.setAttributes(new int[] {20, 20, 20, 20, 10, 0, 0, 20, 10, 10});
 		champions[5] = Anivia;
 
 		ChampionInfo Annie = new ChampionInfo();
@@ -117,8 +124,9 @@ public class ChampionDatabase {
 		Annie.setMoveSpeed(335);
 		Annie.setHealthInfo(384, 76, 4.5, 0.6);
 		Annie.setManaInfo(250, 50, 6.9, 0.6, "Mana");
-	        Annie.setMagicRes(30, 0);
-		//Annie.setSpells(champSpells[6]);
+	   	Annie.setMagicRes(30, 0);
+		Annie.setSpells(champSpells[6]);
+		Annie.setAttributes(new int[] {20, 10, 10, 20, 20, 0, 0, 0, 20, 10});
 		champions[6] = Annie;
 
 		ChampionInfo Ashe = new ChampionInfo();
@@ -133,7 +141,8 @@ public class ChampionDatabase {
 		Ashe.setHealthInfo(395, 79, 4.5, 0.55);
 		Ashe.setManaInfo(173, 35, 6.3, 0.4, "Mana");
 		Ashe.setMagicRes(30, 0);
-		//Ashe.setSpells(champSpells[7]);
+		Ashe.setSpells(champSpells[7]);
+		Ashe.setAttributes(new int[] {20, 20, 20, 20, 10, 0, 0, 0, 10, 10});
 		champions[7] = Ashe;
 
 		ChampionInfo Blitzcrank = new ChampionInfo();
@@ -148,7 +157,8 @@ public class ChampionDatabase {
 		Blitzcrank.setHealthInfo(423, 95, 7.25, 0.75);
 		Blitzcrank.setManaInfo(200, 40, 6.6, 0.5, "Mana");
 		Blitzcrank.setMagicRes(30, 1.25);
-		//Blitzcrank.setSpells(champSpells[8]);
+		Blitzcrank.setSpells(champSpells[8]);
+		Blitzcrank.setAttributes(new int[] {20, 0, 10, 20, 10, 0, 0, 0, 10, 10});
 		champions[8] = Blitzcrank;
 
 		ChampionInfo Brand = new ChampionInfo();
@@ -163,7 +173,8 @@ public class ChampionDatabase {
 		Brand.setHealthInfo(380, 76, 4.5, 0.55);
 		Brand.setManaInfo(250, 45, 7, 0.6, "Mana");
 		Brand.setMagicRes(30, 0);
-		//Brand.setSpells(champSpells[9]);
+		Brand.setSpells(champSpells[9]);
+		Brand.setAttributes(new int[] {10, 10, 20, 20, 20, 0, 0, 0, 10, 10});
 		champions[9] = Brand;
 
 		ChampionInfo Caitlyn = new ChampionInfo();
@@ -177,8 +188,9 @@ public class ChampionDatabase {
 		Caitlyn.setMoveSpeed(325);
 		Caitlyn.setHealthInfo(390, 80, 4.75, 0.55);
 		Caitlyn.setManaInfo(255, 35, 6.5, 0.55, "Mana");
-	        Caitlyn.setMagicRes(30, 0);
-		//Caitlyn.setSpells(champSpells[10]);
+	   	Caitlyn.setMagicRes(30, 0);
+		Caitlyn.setSpells(champSpells[10]);
+		Caitlyn.setAttributes(new int[] {0, 10, 20, 10, 0, 0, 0, 0, 20, 10});
 		champions[10] = Caitlyn;
 
 		ChampionInfo Cassiopeia = new ChampionInfo();
@@ -192,8 +204,9 @@ public class ChampionDatabase {
 		Cassiopeia.setMoveSpeed(335);
 		Cassiopeia.setHealthInfo(380, 75, 4.85, 0.5);
 		Cassiopeia.setManaInfo(250, 50, 7.1, 0.75, "Mana");
-	        Cassiopeia.setMagicRes(30, 0);
-		//Cassiopeia.setSpells(champSpells[11]);
+	   	Cassiopeia.setMagicRes(30, 0);
+		Cassiopeia.setSpells(champSpells[11]);
+		Cassiopeia.setAttributes(new int[] {10, 20, 20, 20, 20, 0, 0, 0, 10, 10});
 		champions[11] = Cassiopeia;	
 		
 		ChampionInfo ChoGath = new ChampionInfo();
@@ -207,8 +220,9 @@ public class ChampionDatabase {
 		ChoGath.setMoveSpeed(345);
 		ChoGath.setHealthInfo(440, 80, 7.5, 0.85);
 		ChoGath.setManaInfo(205, 40, 6.45, 0.45, "Mana");
-	        ChoGath.setMagicRes(30, 1.25);
-		//ChoGath.setSpells(champSpells[12]);
+	   	ChoGath.setMagicRes(30, 1.25);
+		ChoGath.setSpells(champSpells[12]);
+		ChoGath.setAttributes(new int[] {20, 20, 20, 20, 10, 0, 0, 0, 10, 10});
 		champions[12] = ChoGath;
 		
 		ChampionInfo Corki = new ChampionInfo();
@@ -222,8 +236,9 @@ public class ChampionDatabase {
 		Corki.setMoveSpeed(325);
 		Corki.setHealthInfo(375,  82, 4.5, 0.55);
 		Corki.setManaInfo(243, 37, 6.5, 0.55, "Mana");
-	        Corki.setMagicRes(30, 0);
-		//Corki.setSpells(champSpells[13]);
+	   	Corki.setMagicRes(30, 0);
+		Corki.setSpells(champSpells[13]);
+		Corki.setAttributes(new int[] {0, 20, 20, 10, 10, 0, 20, 0, 10, 10});
 		champions[13] = Corki;
 
 		ChampionInfo Darius = new ChampionInfo();
@@ -237,8 +252,9 @@ public class ChampionDatabase {
 		Darius.setMoveSpeed(340);
 		Darius.setHealthInfo(426, 93, 8.25, 0.95);
 		Darius.setManaInfo(200, 37.5, 6, 0.35, "Mana");
-	        Darius.setMagicRes(30, 1.25);
-	    //    Darius.setSpells(champSpells[14]);
+	   	Darius.setMagicRes(30, 1.25);
+	   	Darius.setSpells(champSpells[14]);
+	   	Darius.setAttributes(new int[] {20, 10, 0, 20, 10, 20, 0, 0, 10, 10});
 		champions[14] = Darius;
 
 		ChampionInfo Diana = new ChampionInfo();
@@ -252,8 +268,9 @@ public class ChampionDatabase {
 		Diana.setMoveSpeed(345);
 		Diana.setHealthInfo(438, 90, 6, 0.85);
 		Diana.setManaInfo(230, 40, 7, 0.6, "Mana");
-	        Diana.setMagicRes(30, 1.25);
-	      //  Diana.setSpells(champSpells[15]);
+	   	Diana.setMagicRes(30, 1.25);
+	   	Diana.setSpells(champSpells[15]);
+	   	Diana.setAttributes(new int[] {20, 0, 10, 20, 10, 0, 0, 0, 10, 10});
 		champions[15] = Diana;
 
 		ChampionInfo DrMundo = new ChampionInfo();
@@ -267,8 +284,9 @@ public class ChampionDatabase {
 		DrMundo.setMoveSpeed(345);
 		DrMundo.setHealthInfo(433, 89, 6.5, 0.75);
 		DrMundo.setManaInfo(0, 0, 0, 0, "Health"); //Uses Health as resource
-	        DrMundo.setMagicRes(30, 1.25);
-	       // DrMundo.setSpells(champSpells[16]);
+	   	DrMundo.setMagicRes(30, 1.25);
+	   	DrMundo.setSpells(champSpells[16]);
+	   	DrMundo.setAttributes(new int[] {10, 20, 20, 10, 0, 0, 0, 0, 0, 10});
 		champions[16] = DrMundo;
 
 		ChampionInfo Draven = new ChampionInfo();
@@ -283,7 +301,8 @@ public class ChampionDatabase {
 		Draven.setHealthInfo(420, 82, 5, 0.7);
 		Draven.setManaInfo(240, 42, 6.95, 0.65, "Mana");
 		Draven.setMagicRes(30, 0);
-		//Draven.setSpells(champSpells[17]);
+		Draven.setSpells(champSpells[17]);
+		Draven.setAttributes(new int[] {10, 20, 20, 20, 10, 0, 0, 0, 20, 10});
 		champions[17] = Draven;
 
 		ChampionInfo Elise = new ChampionInfo();
@@ -298,7 +317,8 @@ public class ChampionDatabase {
 		Elise.setHealthInfo(395, 80, 4.7, 0.6);
 		Elise.setManaInfo(240, 50, 6.8, 0.65, "Mana");
 		Elise.setMagicRes(30, 0);
-		//Elise.setSpells(champSpells[18]);
+		Elise.setSpells(champSpells[18]);
+		Elise.setAttributes(new int[] {10, 20, 20, 20, 10, 0, 0, 0, 20, 10});
 		champions[18] = Elise;
 
 		ChampionInfo Evelynn = new ChampionInfo();
@@ -312,8 +332,9 @@ public class ChampionDatabase {
 		Evelynn.setMoveSpeed(340);
 		Evelynn.setHealthInfo(380, 90, 8.9, 0.55);
 		Evelynn.setManaInfo(190, 45, 7.1, 0.6, "Mana");
-	        Evelynn.setMagicRes(30, 1.25);
-	        //Evelynn.setSpells(champSpells[19]);
+	   	Evelynn.setMagicRes(30, 1.25);
+	   	Evelynn.setSpells(champSpells[19]);
+	   	Evelynn.setAttributes(new int[] {20, 10, 10, 20, 10, 0, 0, 0, 10, 10});
 		champions[19] = Evelynn;
 
 		ChampionInfo Ezreal = new ChampionInfo();
@@ -327,8 +348,9 @@ public class ChampionDatabase {
 		Ezreal.setMoveSpeed(325);
 		Ezreal.setHealthInfo(350, 80, 5.5, 0.55);
 		Ezreal.setManaInfo(235, 45, 7, 0.65, "Mana");
-	        Ezreal.setMagicRes(30, 0);
-	        //Ezreal.setSpells(champSpells[20]);
+	   	Ezreal.setMagicRes(30, 0);
+	   	Ezreal.setSpells(champSpells[20]);
+	   	Ezreal.setAttributes(new int[] {10, 20, 20, 10, 10, 0, 0, 0, 10, 10});
 		champions[20] = Ezreal;
 
 		ChampionInfo Fiddlesticks = new ChampionInfo();
@@ -342,9 +364,10 @@ public class ChampionDatabase {
 		Fiddlesticks.setMoveSpeed(335);
 		Fiddlesticks.setHealthInfo(390, 80, 4.6, 0.6);
 		Fiddlesticks.setManaInfo(251, 59, 6.9, 0.65, "Mana");
-	        Fiddlesticks.setMagicRes(30, 0);
-			champions[21] = Fiddlesticks;
-
+	   	Fiddlesticks.setMagicRes(30, 0);
+	   	Fiddlesticks.setSpells(champSpells[21]);
+	   	Fiddlesticks.setAttributes(new int[] {20, 20, 10, 20, 20, 0, 0, 0, 0, 10});
+		champions[21] = Fiddlesticks;
 
 		ChampionInfo Fiora = new ChampionInfo();
 		Fiora.setNameTitle("Fiora", "the Grand Duelist");
@@ -357,9 +380,10 @@ public class ChampionDatabase {
 		Fiora.setMoveSpeed(350);
 		Fiora.setHealthInfo(450, 85, 5.5, 0.8);
 		Fiora.setManaInfo(220, 40, 6.75, 0.5, "Mana");
-	        Fiora.setMagicRes(30, 1.25);
-			champions[22] = Fiora;
-
+	   	Fiora.setMagicRes(30, 1.25);
+	   	Fiora.setSpells(champSpells[22]);
+	   	Fiora.setAttributes(new int[] {20, 20, 0, 10, 10, 0, 0, 0, 10, 10});
+		champions[22] = Fiora;
 
 		ChampionInfo Fizz = new ChampionInfo();
 		Fizz.setNameTitle("Fizz", "the Tidal Trickster");
@@ -373,8 +397,9 @@ public class ChampionDatabase {
 		Fizz.setHealthInfo(414, 86, 7, 0.7);
 		Fizz.setManaInfo(200, 40, 6.1, 0.45, "Mana");
 		Fizz.setMagicRes(30, 1.25);
+		Fizz.setSpells(champSpells[23]);
+		Fizz.setAttributes(new int[] {10, 0, 0, 20, 10, 0, 0, 0, 0, 20});
 		champions[23] = Fizz;
-
 
 		ChampionInfo Galio = new ChampionInfo();
 		Galio.setNameTitle("Galio", "the Sentinel's Sorrow");
@@ -387,9 +412,10 @@ public class ChampionDatabase {
 		Galio.setMoveSpeed(335);
 		Galio.setHealthInfo(435, 85, 7.45, 0.75);
 		Galio.setManaInfo(235, 50, 7, 0.7, "Mana");
-	        Galio.setMagicRes(30, 0);
-			champions[24] = Galio;
-
+	   	Galio.setMagicRes(30, 0);
+	   	Galio.setSpells(champSpells[24]);
+	   	Galio.setAttributes(new int[] {10, 20, 20, 20, 20, 0, 0, 0, 10, 10});
+		champions[24] = Galio;
 
 		ChampionInfo Gangplank = new ChampionInfo();
 		Gangplank.setNameTitle("Gangplank", "the Saltwater Scourge");
@@ -402,9 +428,10 @@ public class ChampionDatabase {
 		Gangplank.setMoveSpeed(345);
 		Gangplank.setHealthInfo(495, 81, 4.25, 0.75);
 		Gangplank.setManaInfo(215, 40, 6.5, 0.7, "Mana");
-	        Gangplank.setMagicRes(30, 1.25);
-			champions[25] = Gangplank;
-
+	   	Gangplank.setMagicRes(30, 1.25);
+	   	Gangplank.setSpells(champSpells[25]);
+	   	Gangplank.setAttributes(new int[] {10, 0, 20, 20, 10, 0, 0, 0, 10, 10});
+		champions[25] = Gangplank;
 
 		ChampionInfo Garen = new ChampionInfo();
 		Garen.setNameTitle("Garen", "the Might of Demacia");
@@ -418,8 +445,9 @@ public class ChampionDatabase {
 		Garen.setHealthInfo(455, 96, 7, 0.5);
 		Garen.setManaInfo(0, 0, 0, 0, "Health"); //Uses Health as resource
 		Garen.setMagicRes(30, 1.25);
+		Garen.setSpells(champSpells[26]);
+		Garen.setAttributes(new int[] {10, 10, 0, 10, 10, 20, 0, 0, 20, 10});
 		champions[26] = Garen;
-
 
 		ChampionInfo Gragas = new ChampionInfo();
 		Gragas.setNameTitle("Gragas", "the Rabble Rouser");
@@ -432,8 +460,9 @@ public class ChampionDatabase {
 		Gragas.setMoveSpeed(330);
 		Gragas.setHealthInfo(434, 89, 7.25, 0.85);
 		Gragas.setManaInfo(221, 47, 6.45, 0.45, "Mana");
+		Gragas.setSpells(champSpells[27]);
+		Gragas.setAttributes(new int[] {20, 20, 20, 20, 10, 0, 0, 0, 10, 10});
 		champions[27] = Gragas;
-
 
 		ChampionInfo Graves = new ChampionInfo();
 		Graves.setNameTitle("Graves", "the Outlaw");
@@ -446,9 +475,10 @@ public class ChampionDatabase {
 		Graves.setMoveSpeed(330);
 		Graves.setHealthInfo(410, 84, 5.5, 0.7);
 		Graves.setManaInfo(255, 40, 6.75, 0.7, "Mana");
-	        Graves.setMagicRes(30, 0);
-			champions[28] = Graves;
-
+	   	Graves.setMagicRes(30, 0);
+	   	Graves.setSpells(champSpells[28]);
+	   	Graves.setAttributes(new int[] {10, 10, 20, 20, 10, 0, 0, 0, 10, 10});
+		champions[28] = Graves;
 
 		ChampionInfo Hecarim = new ChampionInfo();
 		Hecarim.setNameTitle("Hecarim", "the Shadow of War");
@@ -462,8 +492,9 @@ public class ChampionDatabase {
 		Hecarim.setHealthInfo(440, 95, 8, 0.75);
 		Hecarim.setManaInfo(210, 40, 6.5, 0.6, "Mana");
 		Hecarim.setMagicRes(30, 1.25);
+		Hecarim.setSpells(champSpells[29]);
+		Hecarim.setAttributes(new int[] {20, 10, 0, 10, 10, 0, 0, 0, 10, 10});
 		champions[29] = Hecarim;
-
 		
 		ChampionInfo Heimerdinger = new ChampionInfo();
 		Heimerdinger.setNameTitle("Heimerdinger", "the Revered Inventor");
@@ -476,9 +507,10 @@ public class ChampionDatabase {
 		Heimerdinger.setMoveSpeed(340);
 		Heimerdinger.setHealthInfo(350, 75, 0, 0.6);
 		Heimerdinger.setManaInfo(240, 40, 6, 0.6, "Mana");
-	        Heimerdinger.setMagicRes(30, 0);
-			champions[30] = Heimerdinger;
-
+	   	Heimerdinger.setMagicRes(30, 0);
+	   	Heimerdinger.setSpells(champSpells[30]);
+	   	Heimerdinger.setAttributes(new int[] {0, 20, 10, 10, 10, 0, 20, 0, 10, 10});
+		champions[30] = Heimerdinger;
 
 		ChampionInfo Irelia = new ChampionInfo();
 		Irelia.setNameTitle("Irelia", "the Will of the Blades");
@@ -491,9 +523,10 @@ public class ChampionDatabase {
 		Irelia.setMoveSpeed(340);
 		Irelia.setHealthInfo(456, 90, 7.5, 0.65);
 		Irelia.setManaInfo(230, 35, 7, 0.65, "Mana");
-	        Irelia.setMagicRes(30, 1.25);
-			champions[31] = Irelia;
-
+	   	Irelia.setMagicRes(30, 1.25);
+	   	Irelia.setSpells(champSpells[31]);
+	   	Irelia.setAttributes(new int[] {20, 10, 0, 20, 10, 0, 0, 0, 0, 20});
+		champions[31] = Irelia;
 
 		ChampionInfo Janna = new ChampionInfo();
 		Janna.setNameTitle("Janna", "the Storm's Fury");
@@ -506,9 +539,10 @@ public class ChampionDatabase {
 		Janna.setMoveSpeed(335);
 		Janna.setHealthInfo(356, 78, 4.5, 0.55);
 		Janna.setManaInfo(302, 64, 6.9, 0.6, "Mana");
+		Janna.setAttributes(new int[] {10, 20, 20, 10, 0, 0, 0, 0, 10, 10});
 		Janna.setMagicRes(30, 0);
+		Janna.setSpells(champSpells[32]);
 		champions[32] = Janna;
-
 
 		ChampionInfo JarvanIV = new ChampionInfo();
 		JarvanIV.setNameTitle("Jarvan IV", "the Exemplar of Demacia");
@@ -522,8 +556,9 @@ public class ChampionDatabase {
 		JarvanIV.setHealthInfo(420, 90, 7, 0.7);
 		JarvanIV.setManaInfo(235, 40, 6, 0.45, "Mana");
 		JarvanIV.setMagicRes(30, 1.25);
+		JarvanIV.setSpells(champSpells[33]);
+		JarvanIV.setAttributes(new int[] {20, 0, 10, 20, 20, 20, 0, 0, 20, 10});
 		champions[33] = JarvanIV;
-
 
 		ChampionInfo Jax = new ChampionInfo();
 		Jax.setNameTitle("Jax", "Grandmaster at Arms");
@@ -536,9 +571,10 @@ public class ChampionDatabase {
 		Jax.setMoveSpeed(350);
 		Jax.setHealthInfo(463, 98, 7.45, 0.55);
 		Jax.setManaInfo(230, 35, 6.4, 0.7, "Mana");
-	        Jax.setMagicRes(30, 1.25);
-			champions[34] = Jax;
-
+	   	Jax.setMagicRes(30, 1.25);
+	   	Jax.setSpells(champSpells[34]);
+	   	Jax.setAttributes(new int[] {20, 20, 0, 20, 0, 20, 0, 0, 0, 20});
+		champions[34] = Jax;
 
 		ChampionInfo Jayce = new ChampionInfo();
 		Jayce.setNameTitle("Jayce", "the Defender of Tomorrow");
@@ -551,9 +587,10 @@ public class ChampionDatabase {
 		Jayce.setMoveSpeed(340);
 		Jayce.setHealthInfo(420, 90, 6, 0.8);
 		Jayce.setManaInfo(240, 40, 7, 0.7, "Mana");
-	        Jayce.setMagicRes(30, 0);
-			champions[35] = Jayce;
-
+	   	Jayce.setMagicRes(30, 0);
+		Jayce.setSpells(champSpells[35]);
+	   	Jayce.setAttributes(new int[] {10, 10, 20, 10, 0, 20, 0, 0, 20, 10});
+		champions[35] = Jayce;
 
 		ChampionInfo Jinx = new ChampionInfo();
 		Jinx.setNameTitle("Jinx", "the Loose Cannon");
@@ -566,9 +603,10 @@ public class ChampionDatabase {
 		Jinx.setMoveSpeed(325);
 		Jinx.setHealthInfo(380, 82, 5, 0.5);
 		Jinx.setManaInfo(170, 45, 5, 1, "Mana");
-	        Jinx.setMagicRes(30, 0);
-			champions[36] = Jinx;
-
+		Jinx.setMagicRes(30, 0);
+		Jinx.setSpells(champSpells[36]);
+	   	Jinx.setAttributes(new int[] {10, 0, 20, 20, 10, 0, 0, 0, 10, 10});
+		champions[36] = Jinx;
 
 		ChampionInfo Karma = new ChampionInfo();
 		Karma.setNameTitle("Karma", "the Enlightened One");
@@ -582,8 +620,9 @@ public class ChampionDatabase {
 		Karma.setHealthInfo(383, 83, 4.7, 0.55);
 		Karma.setManaInfo(290, 50, 6.8, 0.65, "Mana");
 		Karma.setMagicRes(30, 0);
+		Karma.setSpells(champSpells[37]);
+		Karma.setAttributes(new int[] {10, 20, 20, 10, 10, 0, 0, 0, 10, 10});
 		champions[37] = Karma;
-
 
 		ChampionInfo Karthus = new ChampionInfo();
 		Karthus.setNameTitle("Karthus", "the Deathsinger");
@@ -596,9 +635,10 @@ public class ChampionDatabase {
 		Karthus.setMoveSpeed(335);
 		Karthus.setHealthInfo(390, 75, 5.5, 0.55);
 		Karthus.setManaInfo(270, 61, 6.5, 0.6, "Mana");
-	        Karthus.setMagicRes(30, 0);
-			champions[38] = Karthus;
-
+	   	Karthus.setMagicRes(30, 0);
+	   	Karthus.setSpells(champSpells[38]);
+	   	Karthus.setAttributes(new int[] {10, 10, 20, 0, 20, 0, 0, 20, 0, 20});
+		champions[38] = Karthus;
 
 		ChampionInfo Kassadin = new ChampionInfo();
 		Kassadin.setNameTitle("Kassadin", "the Void Walker");
@@ -612,11 +652,9 @@ public class ChampionDatabase {
 		Kassadin.setHealthInfo(433,  78 , 6.95, 0.5);
 		Kassadin.setManaInfo(230, 45, 6.9, 0.6, "Mana");
 		Kassadin.setMagicRes(30, 0 );
+		Kassadin.setSpells(champSpells[39]);
+		Kassadin.setAttributes(new int[]{10,0,0,20,0,0,0,0,0,20});
 		champions[39] = Kassadin;
-
-		//I need to add his spells later.
-		//also maybe have id number for him 
-		//giant array?
 		
 		ChampionInfo Katarina = new ChampionInfo();
 		Katarina.setNameTitle("Katarina", "the Sinister Blade");
@@ -628,11 +666,11 @@ public class ChampionDatabase {
 		Katarina.setRange(125, "Melee");
 		Katarina.setMoveSpeed(345);
 		Katarina.setHealthInfo(425, 80, 6.95, 0.55);
-		Katarina.setManaInfo(0,0,0,0, null);
+		Katarina.setManaInfo(0,0,0,0, "No Resource");
 		Katarina.setMagicRes( 30, 1.25);
+		Katarina.setSpells(champSpells[40]);
+		Katarina.setAttributes(new int[]{20,0,0,10,20,0,0,0,10,0});
 		champions[40] = Katarina;
-
-		//.setSpells
 		
 		ChampionInfo Kayle = new ChampionInfo();
 		Kayle.setNameTitle("Kayle", "the Judicator");
@@ -646,9 +684,9 @@ public class ChampionDatabase {
 		Kayle.setHealthInfo(418, 93, 7, 0.75);
 		Kayle.setManaInfo(255, 40, 6.9, 0.525, "Mana");
 		Kayle.setMagicRes(30, 0);
+		Kayle.setSpells(champSpells[41]);
+		Kayle.setAttributes(new int[]{10,20,20,20,10,0,0,0,10,10});
 		champions[41] = Kayle;
-
-		//.setSpells
 		
 		ChampionInfo Kennen = new ChampionInfo();
 		Kennen.setNameTitle("Kennen", "The Heart of the Tempest");
@@ -662,13 +700,13 @@ public class ChampionDatabase {
 		Kennen.setHealthInfo(403, 79, 4.5, 0.65);
 		Kennen.setManaInfo(200, 0, 50, 0, "Energy");
 		Kennen.setMagicRes(30, 0);
+		Kennen.setSpells(champSpells[42]);
+		Kennen.setAttributes(new int[]{20,10,20,20,20,0,20,0,10,10});
 		champions[42] = Kennen;
-
-		//.setSpells
 		
 		ChampionInfo KhaZix= new ChampionInfo();
 		KhaZix.setNameTitle("Kha'Zix", "the Voidreaver");
-		KhaZix.setTypes("Assassin", null);
+		KhaZix.setTypes("Assassin", "");
 		KhaZix.setInfo(9, 4, 3, 7);
 		KhaZix.setAttackDam(50, 3.1);
 		KhaZix.setAttackSpeed(0.668, 2.7);
@@ -678,9 +716,9 @@ public class ChampionDatabase {
 		KhaZix.setHealthInfo(430, 85, 6.25, 0.75);
 		KhaZix.setManaInfo(260, 40, 6.75, 0.5, "Mana");
 		KhaZix.setMagicRes(30, 1.25);
-		champions[43] = KhaZix;
-
-		//.setSpells
+		KhaZix.setSpells(champSpells[43]);
+		KhaZix.setAttributes(new int[]{20,10,10,20,10,20,0,0,10,10});
+		champions[43] = KhaZix; 
 		
 		ChampionInfo KogMaw = new ChampionInfo();
 		KogMaw.setNameTitle("Kog'Maw", "the Mouth of the Abyss");
@@ -694,9 +732,9 @@ public class ChampionDatabase {
 		KogMaw.setHealthInfo(440, 84, 5, 0.55);
 		KogMaw.setManaInfo(255, 40, 7.5, 0.7, "Mana");
 		KogMaw.setMagicRes(30, 0);
+		KogMaw.setSpells(champSpells[44]);
+		KogMaw.setAttributes(new int[]{10,0,20,10,10,0,0,0,0,20});
 		champions[44] = KogMaw;
-
-		//.setSpells
 		
 		ChampionInfo LeBlanc = new ChampionInfo();
 		LeBlanc.setNameTitle("LeBlanc", "the Deceiver");
@@ -710,9 +748,9 @@ public class ChampionDatabase {
 		LeBlanc.setHealthInfo(390, 75, 6.5, 0.55);
 		LeBlanc.setManaInfo(250, 50, 6.9, 0.6, "Mana");
 		LeBlanc.setMagicRes(30, 0);
+		LeBlanc.setSpells(champSpells[45]);
+		LeBlanc.setAttributes(new int[]{10,10,10,20,0,0,0,0,20,0});
 		champions[45] = LeBlanc;
-
-		//.setSpells
 		
 		ChampionInfo LeeSin = new ChampionInfo();
 		LeeSin.setNameTitle("Lee Sin", "the Blind Monk");
@@ -726,9 +764,9 @@ public class ChampionDatabase {
 		LeeSin.setHealthInfo(428, 85, 6.25, 0.7);
 		LeeSin.setManaInfo(200, 0, 50, 0, "Energy");
 		LeeSin.setMagicRes(30, 1.25);
-		champions[46] = LeBlanc;
-
-		//.setSpells
+		LeeSin.setSpells(champSpells[46]);
+		LeeSin.setAttributes(new int[]{20,20,10,20,0,0,0,0,20,10});
+		champions[46] = LeeSin;
 		
 		ChampionInfo Leona = new ChampionInfo();
 		Leona.setNameTitle("Leona", "the Radiant Dawn");
@@ -742,13 +780,13 @@ public class ChampionDatabase {
 		Leona.setHealthInfo(430, 87, 7, 0.85);
 		Leona.setManaInfo(235, 40, 7, 0.7, "Mana");
 		Leona.setMagicRes(30, 1.25);
+		Leona.setSpells(champSpells[47]);
+		Leona.setAttributes(new int[]{20,10,0,20,20,0,0,0,20,10});
 		champions[47] = Leona;
-
-		//.setSpells
 		
 		ChampionInfo Lissandra = new ChampionInfo();
 		Lissandra.setNameTitle("Lissandra", "the Ice Witch");
-		Lissandra.setTypes("Mage", null);
+		Lissandra.setTypes("Mage", "");
 		Lissandra.setInfo(2, 5, 8, 8);
 		Lissandra.setAttackDam(48, 2.7);
 		Lissandra.setAttackSpeed(0.625, 1.36);
@@ -758,13 +796,13 @@ public class ChampionDatabase {
 		Lissandra.setHealthInfo(365, 84, 6, 0.55);
 		Lissandra.setManaInfo(220, 50, 5, 0.4, "Mana");
 		Lissandra.setMagicRes(30, 0);
+		Lissandra.setSpells(champSpells[48]);
+		Lissandra.setAttributes(new int[]{20,10,10,20,20,0,0,0,10,10});
 		champions[48] = Lissandra;
-
-		//.setSpells
 		
 		ChampionInfo Lucian = new ChampionInfo();
 		Lucian.setNameTitle("Lucian", "the Purifier");
-		Lucian.setTypes("Marksman", null);
+		Lucian.setTypes("Marksman", "");
 		Lucian.setInfo(8, 5, 3, 8);
 		Lucian.setAttackDam(46, 3);
 		Lucian.setAttackSpeed(0.638, 3.3);
@@ -774,9 +812,9 @@ public class ChampionDatabase {
 		Lucian.setHealthInfo(390, 80, 5.1, 0.65);
 		Lucian.setManaInfo(230, 41, 7, 0.7, "Mana");
 		Lucian.setMagicRes(30, 0);
+		Lucian.setSpells(champSpells[49]);
+		Lucian.setAttributes(new int[]{20,10,20,10,0,0,0,0,10,10});
 		champions[49] = Lucian;
-
-		//.setSpells
 		
 		ChampionInfo Lulu = new ChampionInfo();
 		Lulu.setNameTitle("Lulu", "the Fae Sorceress");
@@ -790,9 +828,9 @@ public class ChampionDatabase {
 		Lulu.setHealthInfo(415, 82, 5, 0.6);
 		Lulu.setManaInfo(200, 55, 5, 0.5, "Mana");
 		Lulu.setMagicRes(30, 0);
+		Lulu.setSpells(champSpells[50]);
+		Lulu.setAttributes(new int[]{20,10,20,20,10,0,20,0,10,10});
 		champions[50] = Lulu;
-
-		//.setSpells
 		
 		ChampionInfo Lux = new ChampionInfo();
 		Lux.setNameTitle("Lux", "the Lady of Luminosity");
@@ -806,9 +844,9 @@ public class ChampionDatabase {
 		Lux.setHealthInfo(345, 79, 4.5, 0.55);
 		Lux.setManaInfo(250, 50, 6, 0.6, "Mana");
 		Lux.setMagicRes(30, 0);
+		Lux.setSpells(champSpells[51]);
+		Lux.setAttributes(new int[]{10,10,20,20,10,0,0,0,10,10});
 		champions[51] = Lux;
-
-		//.setSpells
 		
 		ChampionInfo Malphite = new ChampionInfo();
 		Malphite.setNameTitle("Malphite", "Shard of the Monolith");
@@ -822,9 +860,9 @@ public class ChampionDatabase {
 		Malphite.setHealthInfo(423, 90, 7.45, 0.55);
 		Malphite.setManaInfo(215, 40, 6.4, 0.55, "Mana");
 		Malphite.setMagicRes(30, 1.25);
+		Malphite.setSpells(champSpells[52]);
+		Malphite.setAttributes(new int[]{20,0,10,10,20,0,0,0,10,10});
 		champions[52] = Malphite;
-
-		//.setSpells
 		
 		ChampionInfo Malzahar = new ChampionInfo();
 		Malzahar.setNameTitle("Malzahar", "the Prophet of the Void");
@@ -838,9 +876,9 @@ public class ChampionDatabase {
 		Malzahar.setHealthInfo(380, 80, 4.5, 0.55);
 		Malzahar.setManaInfo(250, 45, 7, 0.6, "Mana");
 		Malzahar.setMagicRes(30, 0);
+		Malzahar.setSpells(champSpells[53]);
+		Malzahar.setAttributes(new int[]{0,0,10,20,10,0,0,0,10,10});
 		champions[53] = Malzahar;
-
-		//.setSpells
 		
 		ChampionInfo Maokai = new ChampionInfo();
 		Maokai.setNameTitle("Maokai", "the Twisted Treant");
@@ -854,9 +892,9 @@ public class ChampionDatabase {
 		Maokai.setHealthInfo(421, 90, 7.25, 0.85);
 		Maokai.setManaInfo(250, 46, 6.45, 0.45, "Mana");
 		Maokai.setMagicRes(30, 0);
+		Maokai.setSpells(champSpells[54]);
+		Maokai.setAttributes(new int[]{20,0,0,20,10,0,0,0,10,10});
 		champions[54] = Maokai;
-
-		//.setSpells
 		
 		ChampionInfo MasterYi = new ChampionInfo();
 		MasterYi.setNameTitle("Master Yi", "the Wuju Bladesman");
@@ -870,13 +908,13 @@ public class ChampionDatabase {
 		MasterYi.setHealthInfo(444, 92, 6.5, 0.65);
 		MasterYi.setManaInfo(180, 42, 6.5, 0.45, "Mana");
 		MasterYi.setMagicRes(30, 1.25);
+		MasterYi.setSpells(champSpells[55]);
+		MasterYi.setAttributes(new int[]{10,20,0,20,10,0,0,0,0,20});
 		champions[55] = MasterYi;
-
-		//.setSpells
 		
 		ChampionInfo MissFortune = new ChampionInfo();
 		MissFortune.setNameTitle("Miss Fortune", "the Bounty Hunter");
-		MissFortune.setTypes("Marksman", null);
+		MissFortune.setTypes("Marksman", "");
 		MissFortune.setInfo(8, 2,5,3);
 		MissFortune.setAttackDam(46.5, 3);
 		MissFortune.setAttackSpeed(0.656, 3.01);
@@ -886,9 +924,9 @@ public class ChampionDatabase {
 		MissFortune.setHealthInfo(435, 85, 5.1, 0.65);
 		MissFortune.setManaInfo(212, 38, 6.95, 0.65, "Mana");
 		MissFortune.setMagicRes(30, 0);
+		MissFortune.setSpells(champSpells[56]);
+		MissFortune.setAttributes(new int[]{10,10,10,10,20,0,0,0,10,10});
 		champions[56] = MissFortune;
-
-		//.setSpells
 		
 		ChampionInfo Mordekaiser = new ChampionInfo();
 		Mordekaiser.setNameTitle("Mordekaiser", "the Master of Metal");
@@ -900,11 +938,11 @@ public class ChampionDatabase {
 		Mordekaiser.setRange(125, "Melee");
 		Mordekaiser.setMoveSpeed(340);
 		Mordekaiser.setHealthInfo(421, 80, 7.45, 0.55);
-		Mordekaiser.setManaInfo(0,0,0,0, null);
+		Mordekaiser.setManaInfo(0,0,0,0, "Uses Health");
 		Mordekaiser.setMagicRes(30, 1.25);
+		Mordekaiser.setSpells(champSpells[57]);
+		Mordekaiser.setAttributes(new int[]{10,0,0,10,10,0,0,0,10,10});
 		champions[57] = Mordekaiser;
-
-		//.setSpells
 		
 		ChampionInfo Morgana = new ChampionInfo();
 		Morgana.setNameTitle("Morgana", "Fallen Angel");
@@ -918,9 +956,9 @@ public class ChampionDatabase {
 		Morgana.setHealthInfo(403, 86, 4.7, 0.6);
 		Morgana.setManaInfo(240, 60, 6.8, 0.65, "Mana");
 		Morgana.setMagicRes(30, 0);
+		Morgana.setSpells(champSpells[58]);
+		Morgana.setAttributes(new int[]{20,10,10,20,20,0,0,0,10,10});
 		champions[58] = Morgana;
-
-		//.setSpells
 		
 		ChampionInfo Nami = new ChampionInfo();
 		Nami.setNameTitle("Nami", "the Tidecaller");
@@ -934,9 +972,9 @@ public class ChampionDatabase {
 		Nami.setHealthInfo(365, 74, 4.5, 0.55);
 		Nami.setManaInfo(305, 43, 6.9, 0.6, "Mana");
 		Nami.setMagicRes(30, 0);
+		Nami.setSpells(champSpells[59]);
+		Nami.setAttributes(new int[]{10,10,10,20,20,0,0,0,10,10});
 		champions[59] = Nami;
-
-		//.setSpells
 		
 		ChampionInfo Nasus = new ChampionInfo();
 		Nasus.setNameTitle("Nasus", "the Curator of the Sands");
@@ -950,9 +988,9 @@ public class ChampionDatabase {
 		Nasus.setHealthInfo(410, 90, 7.5, 0.9);
 		Nasus.setManaInfo(200, 45 ,6.6, 0.5, "Mana");
 		Nasus.setMagicRes(30, 1.25);
+		Nasus.setSpells(champSpells[60]);
+		Nasus.setAttributes(new int[]{10,20,0,10,0,0,0,0,0,20});
 		champions[60] = Nasus;
-
-		//.setSpells
 		
 		ChampionInfo Nautilus = new ChampionInfo();
 		Nautilus.setNameTitle("Nautilus", "the Titan of the Depths");
@@ -966,9 +1004,9 @@ public class ChampionDatabase {
 		Nautilus.setHealthInfo(432, 86, 7.45, 0.55);
 		Nautilus.setManaInfo(200, 50, 7.45, 0.7, "Mana");
 		Nautilus.setMagicRes(30, 1.25);
+		Nautilus.setSpells(champSpells[61]);
+		Nautilus.setAttributes(new int[]{20,0,0,20,10,0,0,0,10,10});
 		champions[61] = Nautilus;
-
-		//.setSpells
 		
 		ChampionInfo Nidalee = new ChampionInfo();
 		Nidalee.setNameTitle("Nidalee", "the Bestial Huntress");
@@ -982,9 +1020,9 @@ public class ChampionDatabase {
 		Nidalee.setHealthInfo(370, 90, 5, 0.6);
 		Nidalee.setManaInfo(220, 45, 7, 0.5, "Mana");
 		Nidalee.setMagicRes(30, 0);
+		Nidalee.setSpells(champSpells[62]);
+		Nidalee.setAttributes(new int[]{10,0,20,0,10,0,0,0,10,10});
 		champions[62] = Nidalee;
-
-		//.setSpells
 		
 		ChampionInfo Nocturne = new ChampionInfo();
 		Nocturne.setNameTitle("Nocturne", "the Eternal Nightmare");
@@ -998,9 +1036,9 @@ public class ChampionDatabase {
 		Nocturne.setHealthInfo(440, 85, 7, 0.75);
 		Nocturne.setManaInfo(215, 35, 6, 0.45, "Mana");
 		Nocturne.setMagicRes(30, 1.25);
+		Nocturne.setSpells(champSpells[63]);
+		Nocturne.setAttributes(new int[]{10,10,10,20,0,0,0,0,10,10});
 		champions[63] = Nocturne;
-
-		//.setSpells
 		
 		ChampionInfo Nunu = new ChampionInfo();
 		Nunu.setNameTitle("Nunu", "the Yeti Rider");
@@ -1014,9 +1052,9 @@ public class ChampionDatabase {
 		Nunu.setHealthInfo(437, 96, 7.05, 0.8);
 		Nunu.setManaInfo(213, 42, 6.6, 0.5, "Mana");
 		Nunu.setMagicRes(30, 1.25);
+		Nunu.setSpells(champSpells[64]);
+		Nunu.setAttributes(new int[]{10,10,10,20,20,0,0,0,10,10});
 		champions[64] = Nunu;
-
-		//.setSpells
 		
 		ChampionInfo Olaf = new ChampionInfo();
 		Olaf.setNameTitle("Olaf", "the Beserker");
@@ -1030,9 +1068,9 @@ public class ChampionDatabase {
 		Olaf.setHealthInfo(441, 93, 7, 0.9);
 		Olaf.setManaInfo(190, 45, 6.5, 0.575, "Mana");
 		Olaf.setMagicRes(30, 1.25);
+		Olaf.setSpells(champSpells[65]);
+		Olaf.setAttributes(new int[]{10,10,10,10,0,20,0,0,20,10});
 		champions[65] = Olaf;
-
-		//.setSpells
 		
 		ChampionInfo Orianna = new ChampionInfo();
 		Orianna.setNameTitle("Orianna", "the Lady of Clockwork");
@@ -1046,9 +1084,9 @@ public class ChampionDatabase {
 		Orianna.setHealthInfo(385, 79, 5.95, 0.55);
 		Orianna.setManaInfo(250, 50, 7, 0.5, "Mana");
 		Orianna.setMagicRes(30, 0);
-		champions[66] = Orianna;
-
-		//.setSpells
+		Orianna.setSpells(champSpells[66]);
+		Orianna.setAttributes(new int[]{10,10,20,10,20,0,0,0,10,10});
+		champions[66]= Orianna; 
 		
 		ChampionInfo Pantheon = new ChampionInfo();
 		Pantheon.setNameTitle("Pantheon", "the Artisan of War");
@@ -1062,9 +1100,9 @@ public class ChampionDatabase {
 		Pantheon.setHealthInfo(433, 87, 6.75, 0.65);
 		Pantheon.setManaInfo(210, 34, 6.6, 0.45, "Mana");
 		Pantheon.setMagicRes(30, 1.25);
-		champions[67] = Orianna;
-
-		//.setSpells
+		Pantheon.setSpells(champSpells[67]);
+		Pantheon.setAttributes(new int[]{10,0,10,20,10,20,0,0,20,10});
+		champions[67] = Pantheon; 
 		
 		ChampionInfo Poppy = new ChampionInfo();
 		Poppy.setNameTitle("Poppy", "the Iron Ambassador");
@@ -1078,9 +1116,9 @@ public class ChampionDatabase {
 		Poppy.setHealthInfo(423, 81, 7.45, 0.55);
 		Poppy.setManaInfo(185, 30, 6.4, 0.45, "Mana");
 		Poppy.setMagicRes(30, 0);
+		Poppy.setSpells(champSpells[68]);
+		Poppy.setAttributes(new int[]{20,10,0,10,0,0,0,0,10,20});
 		champions[68] = Poppy;
-
-		//.setSpells
 		
 		ChampionInfo Quinn = new ChampionInfo();
 		Quinn.setNameTitle("Quinn", "Demacia's Wings");
@@ -1094,9 +1132,9 @@ public class ChampionDatabase {
 		Quinn.setHealthInfo(390, 85, 4.5, 0.55);
 		Quinn.setManaInfo(210, 35, 6.3, 0.4, "Mana");
 		Quinn.setMagicRes(30, 0);
+		Quinn.setSpells(champSpells[69]);
+		Quinn.setAttributes(new int[]{20,10,20,10,10,0,0,0,10,10});
 		champions[69] = Quinn;
-
-		//.setSpells
 		
 		ChampionInfo Rammus = new ChampionInfo();
 		Rammus.setNameTitle("Rammus", "the Armordillo");
@@ -1110,9 +1148,9 @@ public class ChampionDatabase {
 		Rammus.setHealthInfo(420,86, 7, 0.55);
 		Rammus.setManaInfo(255, 33, 7, 0.5, "Mana");
 		Rammus.setMagicRes(30, 1.25);
+		Rammus.setSpells(champSpells[70]);
+		Rammus.setAttributes(new int[]{20,0,0,20,10,0,0,0,10,10});
 		champions[70] = Rammus;
-
-		//.setSpells
 		
 		ChampionInfo Renekton = new ChampionInfo();
 		Renekton.setNameTitle("Renekton", "the Butcher of the Sands");
@@ -1126,10 +1164,10 @@ public class ChampionDatabase {
 		Renekton.setHealthInfo(426,87, 6.7, 0.75);
 		Renekton.setManaInfo(100, 0,0,0,"Fury");
 		Renekton.setMagicRes(30, 1.25);
+		Renekton.setSpells(champSpells[71]);
+		Renekton.setAttributes(new int[]{20,10,0,20,10,0,0,0,20,10});
 		champions[71] = Renekton;
-
-		//.setSpells
-		
+				
 		ChampionInfo Rengar = new ChampionInfo();
 		Rengar.setNameTitle("Rengar", "the Pridestalker");
 		Rengar.setTypes("Assassin", "Fighter");
@@ -1142,9 +1180,9 @@ public class ChampionDatabase {
 		Rengar.setHealthInfo(435,90,3.6,0.4);
 		Rengar.setManaInfo(5,0,0,0,"Ferocity");
 		Rengar.setMagicRes(30, 1.25);
+		Rengar.setSpells(champSpells[72]);
+		Rengar.setAttributes(new int[]{10,10,10,20,0,20,0,0,10,10});
 		champions[72] = Rengar;
-
-		//.setSpells
 		
 		ChampionInfo Riven = new ChampionInfo();
 		Riven.setNameTitle("Riven", "the Exile");
@@ -1156,11 +1194,11 @@ public class ChampionDatabase {
 		Riven.setRange(125,"Melee");
 		Riven.setMoveSpeed(345);
 		Riven.setHealthInfo(414,86,2.5,0.5);
-		Riven.setManaInfo(0,0,0,0, null);
+		Riven.setManaInfo(0,0,0,0, "No Resource");
 		Riven.setMagicRes(30, 1.25);
+		Riven.setSpells(champSpells[73]);
+		Riven.setAttributes(new int[]{20,0,0,20,10,20,0,0,20,10});
 		champions[73] = Riven;
-
-		//.setSpells
 		
 		ChampionInfo Rumble= new ChampionInfo();
 		Rumble.setNameTitle("Rumble", "the Mechanized Menace");
@@ -1174,9 +1212,9 @@ public class ChampionDatabase {
 		Rumble.setHealthInfo(450,80,7,0.6);
 		Rumble.setManaInfo(100,0,0,0,"Heat");
 		Rumble.setMagicRes(30, 1.25);
+		Rumble.setSpells(champSpells[74]);
+		Rumble.setAttributes(new int[]{10,10,20,10,20,0,20,0,10,10});
 		champions[74] = Rumble;
-
-		//.setSpells
 		
 		ChampionInfo Ryze = new ChampionInfo();
 		Ryze.setNameTitle("Ryze", "the Rogue Mage");
@@ -1190,9 +1228,9 @@ public class ChampionDatabase {
 		Ryze.setHealthInfo(414,86,4.35,0.55);
 		Ryze.setManaInfo(250,55,7,0.6, "Mana");
 		Ryze.setMagicRes(30, 0);
+		Ryze.setSpells(champSpells[75]);
+		Ryze.setAttributes(new int[]{20,10,10,20,10,0,0,0,10,10});
 		champions[75] = Ryze;
-
-		//.setSpells
 		
 		ChampionInfo Sejuani = new ChampionInfo();
 		Sejuani.setNameTitle("Sejuani", "the Winter's Wrath");
@@ -1206,13 +1244,13 @@ public class ChampionDatabase {
 		Sejuani.setHealthInfo(440,95,7.25,0.85);
 		Sejuani.setManaInfo(220,40,6.45,0.45, "Mana");
 		Sejuani.setMagicRes(30, 1.25);
+		Sejuani.setSpells(champSpells[76]);
+		Sejuani.setAttributes(new int[]{20,10,0,20,20,0,0,0,10,10});
 		champions[76] = Sejuani;
-
-		//.setSpells
 		
 		ChampionInfo Shaco = new ChampionInfo();
 		Shaco.setNameTitle("Shaco", "the Demon Jester");
-		Shaco.setTypes("Assasin", null);
+		Shaco.setTypes("Assasin", "");
 		Shaco.setInfo(8, 4, 6, 9);
 		Shaco.setAttackDam(51.7,3.5);
 		Shaco.setAttackSpeed(0.694,3);
@@ -1222,11 +1260,9 @@ public class ChampionDatabase {
 		Shaco.setHealthInfo(441,84,7.45,0.55);
 		Shaco.setManaInfo(230,40,6.4,0.45,"Mana");
 		Shaco.setMagicRes(30, 1.25);
+		Shaco.setSpells(champSpells[77]);
+		Shaco.setAttributes(new int[]{0,20,10,20,0,0,0,0,10,10});
 		champions[77] = Shaco;
-
-		//.setSpells
-
-
 		/*
 		 * 
 		 * Section 3 Champions
@@ -1250,8 +1286,8 @@ public class ChampionDatabase {
 		Shen.setHealthInfo(428, 85, 7.45, 0.55);
 		Shen.setManaInfo(200, 0, 50, 0, "Energy");
 		Shen.setMagicRes(30, 0);
-		//Shen.setSpells(champSpells[78]);
-		//Shen.setAttributes(new int[] {20, 20, 10, 20, 10, 0, 0, 0, 10, 10});
+		Shen.setSpells(champSpells[78]);
+		Shen.setAttributes(new int[] {20, 20, 10, 20, 10, 0, 0, 0, 10, 10});
 		champions[78] = Shen;
 		
 		ChampionInfo Shyvana = new ChampionInfo();
@@ -1266,8 +1302,8 @@ public class ChampionDatabase {
 		Shyvana.setHealthInfo(435, 95, 7.25, 0.8);
 		Shyvana.setManaInfo(100, 0, 0, 0, "Fury");  // How do we handle lack of info?
 		Shyvana.setMagicRes(30, 1.25);
-		//Shyvana.setSpells(champSpells[79]);
-		//Shyvana.setAttributes(new int[] {20, 10, 0, 20, 10, 0, 0, 0, 10, 10});
+		Shyvana.setSpells(champSpells[79]);
+		Shyvana.setAttributes(new int[] {20, 10, 0, 20, 10, 0, 0, 0, 10, 10});
 		champions[79] = Shyvana;
 		
 		ChampionInfo Singed = new ChampionInfo();
@@ -1282,8 +1318,8 @@ public class ChampionDatabase {
 		Singed.setHealthInfo(405, 82, 7.1, 0.55);
 		Singed.setManaInfo(215, 45, 6.6, 0.55, "Mana");
 		Singed.setMagicRes(30, 0);
-		//Singed.setSpells(champSpells[80]);
-		//Singed.setAttributes(new int[] {20, 20, 0, 20, 10, 0, 0, 0, 10, 10});
+		Singed.setSpells(champSpells[80]);
+		Singed.setAttributes(new int[] {20, 20, 0, 20, 10, 0, 0, 0, 10, 10});
 		champions[80] = Singed;
 		
 		ChampionInfo Sion = new ChampionInfo();
@@ -1298,8 +1334,8 @@ public class ChampionDatabase {
 		Sion.setHealthInfo(403, 104, 7.9, 0.95);
 		Sion.setManaInfo(200, 40, 6.3, 0.4, "Mana");
 		Sion.setMagicRes(30, 1.25);
-		//Sion.setSpells(champSpells[81]);
-		//Sion.setAttributes(new int[] {10, 0, 0, 20, 10, 0, 0, 0, 10, 10});
+		Sion.setSpells(champSpells[81]);
+		Sion.setAttributes(new int[] {10, 0, 0, 20, 10, 0, 0, 0, 10, 10});
 		champions[81] = Sion;
 		
 		ChampionInfo Sivir = new ChampionInfo();
@@ -1314,8 +1350,8 @@ public class ChampionDatabase {
 		Sivir.setHealthInfo(378, 82, 4.25, 0.55);
 		Sivir.setManaInfo(203, 43, 6.5, 0.5, "Mana");
 		Sivir.setMagicRes(30, 0);
-		//Sivir.setSpells(champSpells[82]);
-		//Sivir.setAttributes(new int[] {10, 0, 20, 10, 10, 0, 0, 0, 10, 10});
+		Sivir.setSpells(champSpells[82]);
+		Sivir.setAttributes(new int[] {10, 0, 20, 10, 10, 0, 0, 0, 10, 10});
 		champions[82] = Sivir;
 		
 		ChampionInfo Skarner = new ChampionInfo();
@@ -1330,8 +1366,8 @@ public class ChampionDatabase {
 		Skarner.setHealthInfo(440, 96, 7.5, 0.85);
 		Skarner.setManaInfo(205, 40, 6.45, 0.45, "Mana");
 		Skarner.setMagicRes(30, 1.25);
-		//Skarner.setSpells(champSpells[83]);
-		//Skarner.setAttributes(new int[] {10, 0, 0, 20, 0, 0, 0, 0, 10, 10});
+		Skarner.setSpells(champSpells[83]);
+		Skarner.setAttributes(new int[] {10, 0, 0, 20, 0, 0, 0, 0, 10, 10});
 		champions[83] = Skarner;
 		
 		ChampionInfo Sona = new ChampionInfo();
@@ -1346,8 +1382,8 @@ public class ChampionDatabase {
 		Sona.setHealthInfo(380, 70, 4.5, 0.55);
 		Sona.setManaInfo(265, 45, 7, 0.65, "Mana");
 		Sona.setMagicRes(30, 0);
-		//Sona.setSpells(champSpells[84]);
-		//Sona.setAttributes(new int[] {20, 10, 20, 20, 20, 0, 0, 0, 10, 10});
+		Sona.setSpells(champSpells[84]);
+		Sona.setAttributes(new int[] {20, 10, 20, 20, 20, 0, 0, 0, 10, 10});
 		champions[84] = Sona;
 		
 		ChampionInfo Soraka = new ChampionInfo();
@@ -1362,8 +1398,8 @@ public class ChampionDatabase {
 		Soraka.setHealthInfo(405, 76, 4.5, 0.55);
 		Soraka.setManaInfo(240, 60, 6.8, 0.65, "Mana");
 		Soraka.setMagicRes(30, 0);
-		//Soraka.setSpells(champSpells[85]);
-		//Soraka.setAttributes(new int[] {0, 0, 10, 10, 10, 0, 0, 0, 10, 10});
+		Soraka.setSpells(champSpells[85]);
+		Soraka.setAttributes(new int[] {0, 0, 10, 10, 10, 0, 0, 0, 10, 10});
 		champions[85] = Soraka;
 		
 		ChampionInfo Swain = new ChampionInfo();
@@ -1378,8 +1414,8 @@ public class ChampionDatabase {
 		Swain.setHealthInfo(385, 78, 6.75, 0.65);
 		Swain.setManaInfo(240, 50, 6.8, 0.65, "Mana");
 		Swain.setMagicRes(30, 0);
-		//Swain.setSpells(champSpells[86]);
-		//Swain.setAttributes(new int[] {20, 10, 10, 20, 10, 0, 0, 0, 10, 10});
+		Swain.setSpells(champSpells[86]);
+		Swain.setAttributes(new int[] {20, 10, 10, 20, 10, 0, 0, 0, 10, 10});
 		champions[86] = Swain;
 		
 		ChampionInfo Syndra = new ChampionInfo();
@@ -1394,8 +1430,8 @@ public class ChampionDatabase {
 		Syndra.setHealthInfo(380, 78, 5.5, 0.6);
 		Syndra.setManaInfo(250, 50, 6.9, 0.6, "Mana");
 		Syndra.setMagicRes(30, 0);
-		//Syndra.setSpells(champSpells[87]);
-		//Syndra.setAttributes(new int[] {0, 20, 20, 20, 10, 0, 0, 0, 10, 10});
+		Syndra.setSpells(champSpells[87]);
+		Syndra.setAttributes(new int[] {0, 20, 20, 20, 10, 0, 0, 0, 10, 10});
 		champions[87] = Syndra;
 		
 		ChampionInfo Talon = new ChampionInfo();
@@ -1410,8 +1446,8 @@ public class ChampionDatabase {
 		Talon.setHealthInfo(440, 85, 7.25, 0.75);
 		Talon.setManaInfo(260, 40, 6.75, 0.5, "Mana");
 		Talon.setMagicRes(30, 1.25);
-		//Talon.setSpells(champSpells[88]);
-		//Talon.setAttributes(new int[] {20, 0, 10, 20, 10, 0, 0, 0, 10, 10});
+		Talon.setSpells(champSpells[88]);
+		Talon.setAttributes(new int[] {20, 0, 10, 20, 10, 0, 0, 0, 10, 10});
 		champions[88] = Talon;
 		
 		ChampionInfo Taric = new ChampionInfo();
@@ -1426,8 +1462,8 @@ public class ChampionDatabase {
 		Taric.setHealthInfo(468, 90, 7.1, 0.5);
 		Taric.setManaInfo(255, 56, 4.1, 0.4, "Mana");
 		Taric.setMagicRes(30, 1.25);
-		//Taric.setSpells(champSpells[89]);
-		//Taric.setAttributes(new int[] {10, 0, 10, 10, 10, 0, 0, 0, 10, 10});
+		Taric.setSpells(champSpells[89]);
+		Taric.setAttributes(new int[] {10, 0, 10, 10, 10, 0, 0, 0, 10, 10});
 		champions[89] = Taric;
 		
 		ChampionInfo Teemo = new ChampionInfo();
@@ -1442,8 +1478,8 @@ public class ChampionDatabase {
 		Teemo.setHealthInfo(378, 82, 4.65, 0.65);
 		Teemo.setManaInfo(200, 40, 6.45, 0.45, "Mana");
 		Teemo.setMagicRes(30, 0);
-		//Teemo.setSpells(champSpells[90]);
-		//Teemo.setAttributes(new int[] {0, 20, 10, 10, 0, 0, 20, 0, 20, 10});
+		Teemo.setSpells(champSpells[90]);
+		Teemo.setAttributes(new int[] {0, 20, 10, 10, 0, 0, 20, 0, 20, 10});
 		champions[90] = Teemo;
 		
 		ChampionInfo Thresh = new ChampionInfo();
@@ -1458,8 +1494,8 @@ public class ChampionDatabase {
 		Thresh.setHealthInfo(411, 89, 6, 0.55);
 		Thresh.setManaInfo(200, 44, 5, 0.7, "Mana");
 		Thresh.setMagicRes(30, 0);
-		//Thresh.setSpells(champSpells[91]);
-		//Thresh.setAttributes(new int[] {20, 20, 0, 20, 10, 0, 0, 0, 10, 10});
+		Thresh.setSpells(champSpells[91]);
+		Thresh.setAttributes(new int[] {20, 20, 0, 20, 10, 0, 0, 0, 10, 10});
 		champions[91] = Thresh;
 		
 		ChampionInfo Tristana = new ChampionInfo();
@@ -1474,8 +1510,8 @@ public class ChampionDatabase {
 		Tristana.setHealthInfo(415, 82, 5.1, 0.65);
 		Tristana.setManaInfo(193, 32, 6.45, 0.45, "Mana");
 		Tristana.setMagicRes(30, 0);
-		//Tristana.setSpells(champSpells[92]);
-		//Tristana.setAttributes(new int[] {0, 20, 20, 10, 10, 20, 20, 0, 10, 20});
+		Tristana.setSpells(champSpells[92]);
+		Tristana.setAttributes(new int[] {0, 20, 20, 10, 10, 20, 20, 0, 10, 20});
 		champions[92] = Tristana;
 		
 		ChampionInfo Trundle = new ChampionInfo();
@@ -1490,8 +1526,8 @@ public class ChampionDatabase {
 		Trundle.setHealthInfo(455, 96, 8, 0.85);
 		Trundle.setManaInfo(206, 45, 6.5, 0.6, "Mana");
 		Trundle.setMagicRes(30, 1.25);
-		//Trundle.setSpells(champSpells[93]);
-		//Trundle.setAttributes(new int[] {20, 20, 0, 20, 0, 0, 0, 0, 10, 10});
+		Trundle.setSpells(champSpells[93]);
+		Trundle.setAttributes(new int[] {20, 20, 0, 20, 0, 0, 0, 0, 10, 10});
 		champions[93] = Trundle;
 		
 		ChampionInfo Tryndamere = new ChampionInfo();
@@ -1506,8 +1542,8 @@ public class ChampionDatabase {
 		Tryndamere.setHealthInfo(461, 98, 7, 0.9);
 		Tryndamere.setManaInfo(100, 0, 0, 0, "Fury");
 		Tryndamere.setMagicRes(30, 1.25);
-		//Tryndamere.setSpells(champSpells[94]);
-		//Tryndamere.setAttributes(new int[] {20, 20, 0, 10, 0, 0, 0, 0, 0, 20});
+		Tryndamere.setSpells(champSpells[94]);
+		Tryndamere.setAttributes(new int[] {20, 20, 0, 10, 0, 0, 0, 0, 0, 20});
 		champions[94] = Tryndamere;
 		
 		ChampionInfo TwistedFate = new ChampionInfo();
@@ -1522,8 +1558,8 @@ public class ChampionDatabase {
 		TwistedFate.setHealthInfo(384, 82, 4.5, 0.6);
 		TwistedFate.setManaInfo(202, 38, 6.5, 0.5, "Mana");
 		TwistedFate.setMagicRes(30, 0);
-		//TwistedFate.setSpells(champSpells[95]);
-		//TwistedFate.setAttributes(new int[] {10, 20, 20, 20, 0, 0, 0, 0, 10, 10});
+		TwistedFate.setSpells(champSpells[95]);
+		TwistedFate.setAttributes(new int[] {10, 20, 20, 20, 0, 0, 0, 0, 10, 10});
 		champions[95] = TwistedFate;
 		
 		ChampionInfo Twitch = new ChampionInfo();
@@ -1538,8 +1574,8 @@ public class ChampionDatabase {
 		Twitch.setHealthInfo(389, 81, 5, 0.6);
 		Twitch.setManaInfo(220, 40, 6.5, 0.45, "Mana");
 		Twitch.setMagicRes(30, 0);
-		//Twitch.setSpells(champSpells[96]);
-		//Twitch.setAttributes(new int[] {10, 0, 20, 10, 20, 0, 0, 0, 10, 10});
+		Twitch.setSpells(champSpells[96]);
+		Twitch.setAttributes(new int[] {10, 0, 20, 10, 20, 0, 0, 0, 10, 10});
 		champions[96] = Twitch;
 		
 		ChampionInfo Udyr = new ChampionInfo();
@@ -1554,8 +1590,8 @@ public class ChampionDatabase {
 		Udyr.setHealthInfo(427, 99, 7.45, 0.75);
 		Udyr.setManaInfo(220, 30, 6.75, 0.45, "Mana");
 		Udyr.setMagicRes(30, 1.25);
-		//Udyr.setSpells(champSpells[97]);
-		//Udyr.setAttributes(new int[] {20, 10, 0, 20, 0, 0, 0, 0, 10, 10});
+		Udyr.setSpells(champSpells[97]);
+		Udyr.setAttributes(new int[] {20, 10, 0, 20, 0, 0, 0, 0, 10, 10});
 		champions[97] = Udyr;
 		
 		ChampionInfo Urgot = new ChampionInfo();
@@ -1570,8 +1606,8 @@ public class ChampionDatabase {
 		Urgot.setHealthInfo(437, 89, 5.5, 0.6);
 		Urgot.setManaInfo(220, 55, 7.5, 0.65, "Mana");
 		Urgot.setMagicRes(30, 0);
-		//Urgot.setSpells(champSpells[98]);
-		//Urgot.setAttributes(new int[] {10, 0, 20, 20, 0, 0, 0, 0, 10, 10});
+		Urgot.setSpells(champSpells[98]);
+		Urgot.setAttributes(new int[] {10, 0, 20, 20, 0, 0, 0, 0, 10, 10});
 		champions[98] = Urgot;
 		
 		ChampionInfo Varus = new ChampionInfo();
@@ -1586,8 +1622,8 @@ public class ChampionDatabase {
 		Varus.setHealthInfo(400, 82, 4.5, 0.55);
 		Varus.setManaInfo(250, 36, 6.5, 0.5, "Mana");
 		Varus.setMagicRes(30, 0);
-		//Varus.setSpells(champSpells[99]);
-		//Varus.setAttributes(new int[] {20, 0, 20, 10, 20, 0, 0, 0, 10, 10});
+		Varus.setSpells(champSpells[99]);
+		Varus.setAttributes(new int[] {20, 0, 20, 10, 20, 0, 0, 0, 10, 10});
 		champions[99] = Varus;
 		
 		ChampionInfo Vayne = new ChampionInfo();
@@ -1602,8 +1638,8 @@ public class ChampionDatabase {
 		Vayne.setHealthInfo(359, 83, 4.5, 0.55);
 		Vayne.setManaInfo(173, 35, 6.3, 0.4, "Mana");
 		Vayne.setMagicRes(30, 0);
-		//Vayne.setSpells(champSpells[100]);
-		//Vayne.setAttributes(new int[] {10, 20, 10, 20, 0, 0, 0, 0, 0, 20});
+		Vayne.setSpells(champSpells[100]);
+		Vayne.setAttributes(new int[] {10, 20, 10, 20, 0, 0, 0, 0, 0, 20});
 		champions[100] = Vayne;
 		
 		ChampionInfo Veigar = new ChampionInfo();
@@ -1618,8 +1654,8 @@ public class ChampionDatabase {
 		Veigar.setHealthInfo(355, 82, 4.5, 0.55);
 		Veigar.setManaInfo(250, 55, 6.9, 0.6, "Mana");
 		Veigar.setMagicRes(30, 0);
-		//Veigar.setSpells(champSpells[101]);
-		//Veigar.setAttributes(new int[] {10, 10, 10, 20, 10, 0, 20, 0, 0, 20});
+		Veigar.setSpells(champSpells[101]);
+		Veigar.setAttributes(new int[] {10, 10, 10, 20, 10, 0, 20, 0, 0, 20});
 		champions[101] = Veigar;
 		
 		ChampionInfo Velkoz = new ChampionInfo();
@@ -1634,8 +1670,8 @@ public class ChampionDatabase {
 		Velkoz.setHealthInfo(380, 76, 4.5, 0.55);
 		Velkoz.setManaInfo(250, 45, 7, 0.6, "Mana");
 		Velkoz.setMagicRes(30, 0);
-		//Velkoz.setSpells(champSpells[102]);
-		//Velkoz.setAttributes(new int[] {10, 10, 20, 10, 20, 0, 0, 0, 10, 10});
+		Velkoz.setSpells(champSpells[102]);
+		Velkoz.setAttributes(new int[] {10, 10, 20, 10, 20, 0, 0, 0, 10, 10});
 		champions[102] = Velkoz;
 		
 		ChampionInfo Vi = new ChampionInfo();
@@ -1650,8 +1686,8 @@ public class ChampionDatabase {
 		Vi.setHealthInfo(440, 85, 7.5, 0.9);
 		Vi.setManaInfo(220, 45, 7, 0.65, "Mana");
 		Vi.setMagicRes(30, 1.25);
-		//Vi.setSpells(champSpells[103]);
-		//Vi.setAttributes(new int[] {20, 0, 0, 20, 10, 0, 0, 0, 10, 10});
+		Vi.setSpells(champSpells[103]);
+		Vi.setAttributes(new int[] {20, 0, 0, 20, 10, 0, 0, 0, 10, 10});
 		champions[103] = Vi;
 		
 		ChampionInfo Viktor = new ChampionInfo();
@@ -1666,8 +1702,8 @@ public class ChampionDatabase {
 		Viktor.setHealthInfo(385, 78, 6.75, 0.65);
 		Viktor.setManaInfo(240, 50, 6.9, 0.45, "Mana");
 		Viktor.setMagicRes(30, 0);
-		//Viktor.setSpells(champSpells[104]);
-		//Viktor.setAttributes(new int[] {0, 10, 20, 20, 20, 0, 0, 0, 10, 10});
+		Viktor.setSpells(champSpells[104]);
+		Viktor.setAttributes(new int[] {0, 10, 20, 20, 20, 0, 0, 0, 10, 10});
 		champions[104] = Viktor;
 		
 		ChampionInfo Vladimir = new ChampionInfo();
@@ -1680,10 +1716,10 @@ public class ChampionDatabase {
 		Vladimir.setRange(450, "Ranged");
 		Vladimir.setMoveSpeed(335);
 		Vladimir.setHealthInfo(400, 85, 6, 0.6);
-		Vladimir.setManaInfo(0, 0, 0, 0, "Health"); // another tricky one
+		Vladimir.setManaInfo(0, 0, 0, 0, "Uses Health"); // another tricky one
 		Vladimir.setMagicRes(30, 0);
-		//Vladimir.setSpells(champSpells[105]);
-		//Vladimir.setAttributes(new int[] {0, 10, 10, 0, 20, 0, 0, 0, 10, 10});
+		Vladimir.setSpells(champSpells[105]);
+		Vladimir.setAttributes(new int[] {0, 10, 10, 0, 20, 0, 0, 0, 10, 10});
 		champions[105] = Vladimir;
 		
 		ChampionInfo Volibear = new ChampionInfo();
@@ -1698,8 +1734,8 @@ public class ChampionDatabase {
 		Volibear.setHealthInfo(440, 86, 7, 0.65);
 		Volibear.setManaInfo(220, 30, 7, 0.65, "Mana");
 		Volibear.setMagicRes(30, 1.25);
-		//Volibear.setSpells(champSpells[106]);
-		//Volibear.setAttributes(new int[] {20, 0, 0, 20, 10, 0, 0, 0, 10, 10});
+		Volibear.setSpells(champSpells[106]);
+		Volibear.setAttributes(new int[] {20, 0, 0, 20, 10, 0, 0, 0, 10, 10});
 		champions[106] = Volibear;
 		
 		ChampionInfo Warwick = new ChampionInfo(); 
@@ -1714,8 +1750,8 @@ public class ChampionDatabase {
 		Warwick.setHealthInfo(428, 98, 7.05, 0.8);
 		Warwick.setManaInfo(190, 30, 7.1, 0.6, "Mana");
 		Warwick.setMagicRes(30, 1.25);
-		//Warwick.setSpells(champSpells[107]);
-		//Warwick.setAttributes(new int[] {10, 20, 0, 20, 0, 0, 0, 0, 10, 10});
+		Warwick.setSpells(champSpells[107]);
+		Warwick.setAttributes(new int[] {10, 20, 0, 20, 0, 0, 0, 0, 10, 10});
 		champions[107] = Warwick;
 		
 		ChampionInfo Wukong = new ChampionInfo(); 
@@ -1730,8 +1766,8 @@ public class ChampionDatabase {
 		Wukong.setHealthInfo(435, 85, 5.1, 0.65);
 		Wukong.setManaInfo(202, 38, 6.95, 0.65, "Mana");
 		Wukong.setMagicRes(30, 1.25);
-		//Wukong.setSpells(champSpells[108]);
-		//Wukong.setAttributes(new int[] {20, 10, 0, 20, 20, 0, 0, 0, 10, 10});
+		Wukong.setSpells(champSpells[108]);
+		Wukong.setAttributes(new int[] {20, 10, 0, 20, 20, 0, 0, 0, 10, 10});
 		champions[108] = Wukong;
 		
 		ChampionInfo Xerath = new ChampionInfo(); 
@@ -1746,8 +1782,8 @@ public class ChampionDatabase {
 		Xerath.setHealthInfo(380, 80, 4.5, 0.55);
 		Xerath.setManaInfo(238, 47, 6, 0.65, "Mana");
 		Xerath.setMagicRes(30, 0);
-		//Xerath.setSpells(champSpells[109]);
-		//Xerath.setAttributes(new int[] {10, 0, 20, 0, 0, 10, 10, 10, 0, 0});
+		Xerath.setSpells(champSpells[109]);
+		Xerath.setAttributes(new int[] {10, 0, 20, 0, 0, 10, 10, 10, 0, 0});
 		champions[109] = Xerath;
 
 		ChampionInfo XinZhao = new ChampionInfo(); 
@@ -1762,8 +1798,8 @@ public class ChampionDatabase {
 		XinZhao.setHealthInfo(445, 87, 7, 0.7);
 		XinZhao.setManaInfo(215, 35, 6.5, 0.45, "Mana");
 		XinZhao.setMagicRes(30, 1.25);
-		//XinZhao.setSpells(champSpells[110]);
-		//XinZhao.setAttributes(new int[] {20, 20, 0, 20, 0, 0, 0, 0, 10, 10});
+		XinZhao.setSpells(champSpells[110]);
+		XinZhao.setAttributes(new int[] {20, 20, 0, 20, 0, 0, 0, 0, 10, 10});
 		champions[110] = XinZhao;
 		
 		ChampionInfo Yasuo = new ChampionInfo(); 
@@ -1778,8 +1814,8 @@ public class ChampionDatabase {
 		Yasuo.setHealthInfo(430, 82, 5, 0.9);
 		Yasuo.setManaInfo(0, 0, 0, 0, "No Resource");
 		Yasuo.setMagicRes(30, 0);
-		//Yasuo.setSpells(champSpells[111]);
-		//Yasuo.setAttributes(new int[] {20, 20, 20, 20, 20, 20, 0, 0, 10, 10});
+		Yasuo.setSpells(champSpells[111]);
+		Yasuo.setAttributes(new int[] {20, 20, 20, 20, 20, 20, 0, 0, 10, 10});
 		champions[111] = Yasuo;
 		
 		ChampionInfo Yorick = new ChampionInfo(); 
@@ -1794,8 +1830,8 @@ public class ChampionDatabase {
 		Yorick.setHealthInfo(421, 85, 7, 0.7);
 		Yorick.setManaInfo(235, 35, 6, 0.45, "Mana");
 		Yorick.setMagicRes(30, 1.25);
-		//Yorick.setSpells(champSpells[112]);
-		//Yorick.setAttributes(new int[] {10, 20, 20, 0, 10, 0, 0, 20, 20, 10});
+		Yorick.setSpells(champSpells[112]);
+		Yorick.setAttributes(new int[] {10, 20, 20, 0, 10, 0, 0, 20, 20, 10});
 		champions[112] = Yorick;
 		
 		ChampionInfo Zac = new ChampionInfo(); 
@@ -1808,10 +1844,10 @@ public class ChampionDatabase {
 		Zac.setRange(125, "Melee");
 		Zac.setMoveSpeed(335);
 		Zac.setHealthInfo(455, 95, 7, 0.55);
-		Zac.setManaInfo(0, 0, 0, 0, "Health");
+		Zac.setManaInfo(0, 0, 0, 0, "Uses Health");
 		Zac.setMagicRes(30, 1.25);
-		//Zac.setSpells(champSpells[113]);
-		//Zac.setAttributes(new int[] {20, 10, 0, 20, 20, 20, 0, 20, 10, 10});
+		Zac.setSpells(champSpells[113]);
+		Zac.setAttributes(new int[] {20, 10, 0, 20, 20, 20, 0, 20, 10, 10});
 		champions[113] = Zac;
 		
 		ChampionInfo Zed = new ChampionInfo(); 
@@ -1826,8 +1862,8 @@ public class ChampionDatabase {
 		Zed.setHealthInfo(445, 80, 6, 0.65);
 		Zed.setManaInfo(200, 0, 50, 0, "Energy");
 		Zed.setMagicRes(30, 1.25);
-		//Zed.setSpells(champSpells[114]);
-		//Zed.setAttributes(new int[] {10, 20, 10, 20, 10, 0, 0, 0, 10, 10});
+		Zed.setSpells(champSpells[114]);
+		Zed.setAttributes(new int[] {10, 20, 10, 20, 10, 0, 0, 0, 10, 10});
 		champions[114] = Zed;
 		
 		ChampionInfo Ziggs = new ChampionInfo(); 
@@ -1842,8 +1878,8 @@ public class ChampionDatabase {
 		Ziggs.setHealthInfo(390, 80, 5.25, 0.6);
 		Ziggs.setManaInfo(250, 50, 6.75, 0.6, "Mana");
 		Ziggs.setMagicRes(30, 0);
-		//Ziggs.setSpells(champSpells[115]);
-		//Ziggs.setAttributes(new int[] {10, 10, 20, C, 20, 0, 20, 0, 10, 10});
+		Ziggs.setSpells(champSpells[115]);
+		Ziggs.setAttributes(new int[] {10, 10, 20, 10, 20, 0, 20, 0, 10, 10});
 		champions[115] = Ziggs;
 		
 		ChampionInfo Zilean = new ChampionInfo(); 
@@ -1858,8 +1894,8 @@ public class ChampionDatabase {
 		Zilean.setHealthInfo(380, 71, 4.6, 0.5);
 		Zilean.setManaInfo(260, 60, 6.95, 0.65, "Mana");
 		Zilean.setMagicRes(30, 0);
-		//Zilean.setSpells(champSpells[116]);
-		//Zilean.setAttributes(new int[] {10, 10, 10, 20, 10, 0, 0, 20, 10, 10});
+		Zilean.setSpells(champSpells[116]);
+		Zilean.setAttributes(new int[] {10, 10, 10, 20, 10, 0, 0, 20, 10, 10});
 		champions[116] = Zilean;
 		
 		ChampionInfo Zyra = new ChampionInfo(); 
@@ -1874,8 +1910,8 @@ public class ChampionDatabase {
 		Zyra.setHealthInfo(355, 74, 4.85, 0.5);
 		Zyra.setManaInfo(250, 50, 7.1, 0.75, "Mana");
 		Zyra.setMagicRes(30,0);
-		//Zyra.setSpells(champSpells[117]);
-		//Zyra.setAttributes(new int[] {10, 20, 10, 20, 20, 0, 0, 0, 10, 10});
+		Zyra.setSpells(champSpells[117]);
+		Zyra.setAttributes(new int[] {10, 20, 10, 20, 20, 0, 0, 0, 10, 10});
 		champions[117] = Zyra;
 		
 	}
