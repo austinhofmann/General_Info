@@ -208,6 +208,7 @@
          android:id="@+id/spell1"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
          android:layout_below="@+id/spellStatsPerLevel0Dis"        
          android:src="@drawable/clotharmor" />
      
@@ -216,6 +217,7 @@
          android:id="@+id/spell2"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
          android:layout_below="@+id/spellStatsPerLevel1Dis"
          android:src="@drawable/clotharmor" />
 
@@ -223,6 +225,7 @@
          android:id="@+id/spell3"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
          android:layout_below="@+id/spellStatsPerLevel2Dis"
          android:src="@drawable/clotharmor" />
 
@@ -230,6 +233,7 @@
          android:id="@+id/spell4"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
          android:layout_below="@+id/spellStatsPerLevel3Dis"
          android:src="@drawable/clotharmor" />
      
@@ -237,6 +241,7 @@
          android:id="@+id/spell5"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
          android:layout_below="@+id/spellStatsPerLevel4Dis"
          android:src="@drawable/clotharmor" />
 
@@ -244,6 +249,7 @@
          android:id="@+id/spell6"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
          android:layout_below="@+id/spellStatsPerLevel5Dis"
          android:src="@drawable/clotharmor" />
      
@@ -251,6 +257,7 @@
          android:id="@+id/spell7"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
          android:layout_below="@+id/spellStatsPerLevel6Dis"
          android:src="@drawable/clotharmor" />
      
@@ -258,6 +265,7 @@
          android:id="@+id/spell8"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
          android:layout_below="@+id/spellStatsPerLevel7Dis"
          android:src="@drawable/clotharmor" />
 
@@ -267,6 +275,7 @@
         android:id="@+id/spellName0Dis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:layout_toRightOf="@+id/spell0"
         android:layout_below="@+id/icon"
         android:text="Small Text"
@@ -275,6 +284,8 @@
         android:id="@+id/spellName1Dis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
         android:layout_toRightOf="@+id/spell1"
         android:layout_below="@+id/spellStatsPerLevel0Dis"
         android:text="Small Text"
@@ -283,6 +294,8 @@
         android:id="@+id/spellName2Dis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
         android:layout_toRightOf="@+id/spell2"
         android:layout_below="@+id/spellStatsPerLevel1Dis"
         android:text="Small Text"
@@ -291,6 +304,8 @@
         android:id="@+id/spellName3Dis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
         android:layout_toRightOf="@+id/spell3"
         android:layout_below="@+id/spellStatsPerLevel2Dis"
         android:text="Small Text"
@@ -299,6 +314,8 @@
         android:id="@+id/spellName4Dis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
         android:layout_toRightOf="@+id/spell4"
         android:layout_below="@+id/spellStatsPerLevel3Dis"
         android:text="Small Text"
@@ -307,6 +324,8 @@
         android:id="@+id/spellName5Dis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
         android:layout_toRightOf="@+id/spell5"
         android:layout_below="@+id/spellStatsPerLevel4Dis"
         android:text="Small Text"
@@ -315,6 +334,8 @@
         android:id="@+id/spellName6Dis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
         android:layout_toRightOf="@+id/spell6"
         android:layout_below="@+id/spellStatsPerLevel5Dis"
         android:text="Small Text"
@@ -323,6 +344,8 @@
         android:id="@+id/spellName7Dis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
         android:layout_toRightOf="@+id/spell7"
         android:layout_below="@+id/spellStatsPerLevel6Dis"
         android:text="Small Text"
@@ -331,6 +354,8 @@
         android:id="@+id/spellName8Dis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
         android:layout_toRightOf="@+id/spell8"
         android:layout_below="@+id/spellStatsPerLevel7Dis"
         android:text="Small Text"

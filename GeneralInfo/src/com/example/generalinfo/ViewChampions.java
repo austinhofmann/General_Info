@@ -297,8 +297,9 @@ public class ViewChampions extends ActionBarActivity {
      					spell0.setImageResource(R.drawable.aatrox0);
      					spell1.setImageResource(R.drawable.aatrox1);
      					spell2.setImageResource(R.drawable.aatrox2);
-     					spell3.setImageResource(R.drawable.aatrox4);
-     					spell4.setImageResource(R.drawable.aatrox5);
+     					spell3.setImageResource(R.drawable.aatrox3);
+     					spell4.setImageResource(R.drawable.aatrox4);
+     					spell5.setImageResource(R.drawable.aatrox5);
      					break;
      			case 1: icon.setImageResource(R.drawable.ahri);
      					spell0.setImageResource(R.drawable.ahri0);
@@ -425,6 +426,9 @@ public class ViewChampions extends ActionBarActivity {
 						spell2.setImageResource(R.drawable.elise2);
 						spell3.setImageResource(R.drawable.elise3);
 						spell4.setImageResource(R.drawable.elise4);
+						spell5.setImageResource(R.drawable.elise5);
+						spell6.setImageResource(R.drawable.elise6);
+						spell7.setImageResource(R.drawable.elise7);
 						break;						
      			case 19: icon.setImageResource(R.drawable.evelynn);
 						spell0.setImageResource(R.drawable.evelynn0);
@@ -460,6 +464,7 @@ public class ViewChampions extends ActionBarActivity {
 						spell2.setImageResource(R.drawable.fizz2);
 						spell3.setImageResource(R.drawable.fizz3);
 						spell4.setImageResource(R.drawable.fizz4);
+						spell5.setImageResource(R.drawable.fizz5);
 						break;						
      			case 24: icon.setImageResource(R.drawable.galio);
 						spell0.setImageResource(R.drawable.galio0);
@@ -509,6 +514,9 @@ public class ViewChampions extends ActionBarActivity {
 						spell2.setImageResource(R.drawable.heimerdinger2);
 						spell3.setImageResource(R.drawable.heimerdinger3);
 						spell4.setImageResource(R.drawable.heimerdinger4);
+						spell5.setImageResource(R.drawable.heimerdinger5);
+						spell6.setImageResource(R.drawable.heimerdinger6);
+						spell7.setImageResource(R.drawable.heimerdinger7);
 						break;						
      			case 31: icon.setImageResource(R.drawable.irelia);
 						spell0.setImageResource(R.drawable.irelia0);
@@ -516,6 +524,7 @@ public class ViewChampions extends ActionBarActivity {
 						spell2.setImageResource(R.drawable.irelia2);
 						spell3.setImageResource(R.drawable.irelia3);
 						spell4.setImageResource(R.drawable.irelia4);
+						spell5.setImageResource(R.drawable.irelia5);
 						break;						
      			case 32: icon.setImageResource(R.drawable.janna);
 						spell0.setImageResource(R.drawable.janna0);
@@ -544,6 +553,10 @@ public class ViewChampions extends ActionBarActivity {
 						spell2.setImageResource(R.drawable.jayce2);
 						spell3.setImageResource(R.drawable.jayce3);
 						spell4.setImageResource(R.drawable.jayce4);
+						spell5.setImageResource(R.drawable.jayce5);
+						spell6.setImageResource(R.drawable.jayce6);
+						spell7.setImageResource(R.drawable.jayce7);
+						spell8.setImageResource(R.drawable.jayce8);
 						break;						
      			case 36: icon.setImageResource(R.drawable.jinx);
 						spell0.setImageResource(R.drawable.jinx0);
@@ -551,6 +564,7 @@ public class ViewChampions extends ActionBarActivity {
 						spell2.setImageResource(R.drawable.jinx2);
 						spell3.setImageResource(R.drawable.jinx3);
 						spell4.setImageResource(R.drawable.jinx4);
+						spell5.setImageResource(R.drawable.jinx5);
 						break;						
      			case 37: icon.setImageResource(R.drawable.karma);
 						spell0.setImageResource(R.drawable.karma0);
@@ -558,6 +572,9 @@ public class ViewChampions extends ActionBarActivity {
 						spell2.setImageResource(R.drawable.karma2);
 						spell3.setImageResource(R.drawable.karma3);
 						spell4.setImageResource(R.drawable.karma4);
+						spell5.setImageResource(R.drawable.karma5);
+						spell6.setImageResource(R.drawable.karma6);
+						spell7.setImageResource(R.drawable.karma7);
 						break;
      			case 38: icon.setImageResource(R.drawable.karthus);
 						spell0.setImageResource(R.drawable.karthus0);
@@ -565,6 +582,7 @@ public class ViewChampions extends ActionBarActivity {
 						spell2.setImageResource(R.drawable.karthus2);
 						spell3.setImageResource(R.drawable.karthus3);
 						spell4.setImageResource(R.drawable.karthus4);
+						
 						break;
      			case 39: icon.setImageResource(R.drawable.kassadin);
 						spell0.setImageResource(R.drawable.kassadin0);
@@ -600,6 +618,10 @@ public class ViewChampions extends ActionBarActivity {
 						spell2.setImageResource(R.drawable.khazix2);
 						spell3.setImageResource(R.drawable.khazix3);
 						spell4.setImageResource(R.drawable.khazix4);
+						spell5.setImageResource(R.drawable.khazix5);
+						spell6.setImageResource(R.drawable.khazix6);
+						spell7.setImageResource(R.drawable.khazix7);
+						spell8.setImageResource(R.drawable.khazix8);
 						break;     	
      			case 44: icon.setImageResource(R.drawable.kogmaw);
 						spell0.setImageResource(R.drawable.kogmaw0);
@@ -621,6 +643,9 @@ public class ViewChampions extends ActionBarActivity {
 						spell2.setImageResource(R.drawable.leesin2);
 						spell3.setImageResource(R.drawable.leesin3);
 						spell4.setImageResource(R.drawable.leesin4);
+						spell5.setImageResource(R.drawable.leesin5);
+						spell6.setImageResource(R.drawable.leesin6);
+						spell7.setImageResource(R.drawable.leesin7);
 						break;     	
      			case 47: icon.setImageResource(R.drawable.leona);
 						spell0.setImageResource(R.drawable.leona0);
@@ -733,6 +758,9 @@ public class ViewChampions extends ActionBarActivity {
 						spell2.setImageResource(R.drawable.nidalee2);
 						spell3.setImageResource(R.drawable.nidalee3);
 						spell4.setImageResource(R.drawable.nidalee4);
+						spell5.setImageResource(R.drawable.nidalee5);
+						spell6.setImageResource(R.drawable.nidalee6);
+						spell7.setImageResource(R.drawable.nidalee7);
 						break;     	
      			case 63: icon.setImageResource(R.drawable.nocturne);
 						spell0.setImageResource(R.drawable.nocturne0);
@@ -782,6 +810,7 @@ public class ViewChampions extends ActionBarActivity {
 						spell2.setImageResource(R.drawable.quinn2);
 						spell3.setImageResource(R.drawable.quinn3);
 						spell4.setImageResource(R.drawable.quinn4);
+						spell5.setImageResource(R.drawable.quinn5);
 						break;     	
      			case 70: icon.setImageResource(R.drawable.rammus);
 						spell0.setImageResource(R.drawable.rammus0);
@@ -796,6 +825,7 @@ public class ViewChampions extends ActionBarActivity {
 						spell2.setImageResource(R.drawable.renekton2);
 						spell3.setImageResource(R.drawable.renekton3);
 						spell4.setImageResource(R.drawable.renekton4);
+						spell5.setImageResource(R.drawable.renekton5);
 						break;     	
      			case 72: icon.setImageResource(R.drawable.rengar);
 						spell0.setImageResource(R.drawable.rengar0);
@@ -803,6 +833,9 @@ public class ViewChampions extends ActionBarActivity {
 						spell2.setImageResource(R.drawable.rengar2);
 						spell3.setImageResource(R.drawable.rengar3);
 						spell4.setImageResource(R.drawable.rengar4);
+						spell5.setImageResource(R.drawable.rengar5);
+						spell6.setImageResource(R.drawable.rengar6);
+						spell7.setImageResource(R.drawable.rengar7);
 						break;     	
      			case 73: icon.setImageResource(R.drawable.riven);
 						spell0.setImageResource(R.drawable.riven0);
@@ -810,6 +843,7 @@ public class ViewChampions extends ActionBarActivity {
 						spell2.setImageResource(R.drawable.riven2);
 						spell3.setImageResource(R.drawable.riven3);
 						spell4.setImageResource(R.drawable.riven4);
+						spell5.setImageResource(R.drawable.riven5);
 						break;     	
      			case 74: icon.setImageResource(R.drawable.rumble);
 						spell0.setImageResource(R.drawable.rumble0);
@@ -965,6 +999,10 @@ public class ViewChampions extends ActionBarActivity {
 						spell2.setImageResource(R.drawable.twistedfate2);
 						spell3.setImageResource(R.drawable.twistedfate3);
 						spell4.setImageResource(R.drawable.twistedfate4);
+						spell5.setImageResource(R.drawable.twistedfate5);
+						spell6.setImageResource(R.drawable.twistedfate6);
+						spell7.setImageResource(R.drawable.twistedfate7);
+						spell8.setImageResource(R.drawable.twistedfate8);
 						break;     			
      			case 96: icon.setImageResource(R.drawable.twitch);
 						spell0.setImageResource(R.drawable.twitch0);
@@ -1028,6 +1066,9 @@ public class ViewChampions extends ActionBarActivity {
 						spell2.setImageResource(R.drawable.viktor2);
 						spell3.setImageResource(R.drawable.viktor3);
 						spell4.setImageResource(R.drawable.viktor4);
+						spell5.setImageResource(R.drawable.viktor5);
+						spell6.setImageResource(R.drawable.viktor6);
+						spell7.setImageResource(R.drawable.viktor7);
 						break;     			
      			case 105: icon.setImageResource(R.drawable.vladimir);
 						spell0.setImageResource(R.drawable.vladimir0);
@@ -1127,7 +1168,7 @@ public class ViewChampions extends ActionBarActivity {
 
      			// Name, Title, and Roles
      			String name = champs.getChampList()[i].getName();
-     		/*	String title = champs.getChampList()[i].getTitle();
+     			String title = champs.getChampList()[i].getTitle();
      			String primary = champs.getChampList()[i].getPrimary();
      			String secondary = champs.getChampList()[i].getSecondary();
 
@@ -1259,7 +1300,7 @@ public class ViewChampions extends ActionBarActivity {
  *     Setting of Spell Info and Spell Info Text
  *     
  *     			
- *//*
+ */
      			
      			//TextView spellsText = (TextView)findViewById(R.id.spellsDis);
      			TextView spellName0Text = (TextView)findViewById(R.id.spellName0Dis);
@@ -1331,7 +1372,7 @@ public class ViewChampions extends ActionBarActivity {
 /*
  * Initial Sets for Spells 
  * 
- *//*
+ */
      			//SpellInfo[] spells = SpellDatabase.champSpells[i];
      			//spellName0Text.setText(spells[0].getSpellName());
      			
@@ -1602,7 +1643,7 @@ public class ViewChampions extends ActionBarActivity {
      			}     			
      			
      			
-     			*/
+     			
              
      }
 
