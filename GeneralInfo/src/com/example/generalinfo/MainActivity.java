@@ -26,6 +26,8 @@ public class MainActivity extends ActionBarActivity {
              super.onCreate(savedInstanceState);
              setContentView(R.layout.activity_main);
              
+             SpellDatabase.makeSpellDatabase();
+
              
              final TextView display1 = (TextView)findViewById(R.id.textView1);
 

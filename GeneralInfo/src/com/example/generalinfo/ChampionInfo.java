@@ -39,7 +39,7 @@ private int difficulty;
 private int magicAbility;
 
 //Spells
-//private SpellInfo spells [];
+private SpellInfo spells [];
 
 
 //Attributes
@@ -69,7 +69,7 @@ public ChampionInfo()
 	defense = 0; 
 	difficulty = 0; 
 	magicAbility = 0; 
-	//spells = null;
+	spells = null;
 	//image = null;
 }
 
@@ -323,12 +323,12 @@ public double getMoveSpeed()
 	return movespeed;
 }
 
-/*/ Spell Info
+// Spell Info
 public SpellInfo[] getSpells()
 {
 	return spells;
 }
-*/
+
 
 //TeamBuilder Attributes
 public int[] getAttributes()

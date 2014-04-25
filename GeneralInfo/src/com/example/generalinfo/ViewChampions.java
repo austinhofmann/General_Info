@@ -11,11 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ImageView;
-import android.widget.Spinner;
-import android.widget.TextView;
+import android.widget.*;
 import android.os.Build;
 
 public class ViewChampions extends ActionBarActivity {
@@ -26,7 +22,6 @@ public class ViewChampions extends ActionBarActivity {
      protected void onCreate(Bundle savedInstanceState) {
              super.onCreate(savedInstanceState);
              setContentView(R.layout.activity_viewchampions);
-             
              
              //final TextView display1 = (TextView)findViewById(R.id.textView1);
              int i = 0;
@@ -41,8 +36,21 @@ public class ViewChampions extends ActionBarActivity {
              ImageView spell2 = (ImageView) findViewById(R.id.spell2);
              ImageView spell3 = (ImageView) findViewById(R.id.spell3);
              ImageView spell4 = (ImageView) findViewById(R.id.spell4);
+             ImageView spell5 = (ImageView) findViewById(R.id.spell5);
+             ImageView spell6 = (ImageView) findViewById(R.id.spell6);
+             ImageView spell7 = (ImageView) findViewById(R.id.spell7);
+             ImageView spell8 = (ImageView) findViewById(R.id.spell8);
 
-
+            spell0.setImageResource(R.drawable.abc_search_dropdown_light);
+			spell1.setImageResource(R.drawable.abc_search_dropdown_light);
+			spell2.setImageResource(R.drawable.abc_search_dropdown_light);
+			spell3.setImageResource(R.drawable.abc_search_dropdown_light);
+			spell4.setImageResource(R.drawable.abc_search_dropdown_light);
+			spell5.setImageResource(R.drawable.abc_search_dropdown_light);
+			spell6.setImageResource(R.drawable.abc_search_dropdown_light);
+			spell7.setImageResource(R.drawable.abc_search_dropdown_light);
+			spell8.setImageResource(R.drawable.abc_search_dropdown_light);
+             
 
              
      			ChampionDatabase champs = new ChampionDatabase();
@@ -383,14 +391,6 @@ public class ViewChampions extends ActionBarActivity {
 						spell3.setImageResource(R.drawable.corki3);
 						spell4.setImageResource(R.drawable.corki4);
 						break;
-     			case 14: icon.setImageResource(R.drawable.darius);
-     					spell0.setImageResource(R.drawable.darius0);
-     					spell1.setImageResource(R.drawable.darius1);
-     					spell2.setImageResource(R.drawable.darius2);
-     					spell3.setImageResource(R.drawable.darius3);
-     					spell4.setImageResource(R.drawable.darius4);
-     					break;
-						
      			case 14: icon.setImageResource(R.drawable.darius);
      					spell0.setImageResource(R.drawable.darius0);
      					spell1.setImageResource(R.drawable.darius1);
@@ -1127,7 +1127,7 @@ public class ViewChampions extends ActionBarActivity {
 
      			// Name, Title, and Roles
      			String name = champs.getChampList()[i].getName();
-     			String title = champs.getChampList()[i].getTitle();
+     		/*	String title = champs.getChampList()[i].getTitle();
      			String primary = champs.getChampList()[i].getPrimary();
      			String secondary = champs.getChampList()[i].getSecondary();
 
@@ -1161,26 +1161,8 @@ public class ViewChampions extends ActionBarActivity {
      			int difficulty = champs.getChampList()[i].getDifficulty();
      			int magicAbility = champs.getChampList()[i].getMagicOrAbility();
 
-     			/*
-     			//Spells
-     			//Have yet to figure out the correct way to implement these on the champion screen
-     			//spell #'s vary from champion to champion and spell info varies a lot too
-     			//may need to create separate spell details page?
-     			SpellInfo[] spells = new SpellInfo [champs.getChampList()[i].getSpells().length];
-     			for(int j = 0; j < spells.length; j++)
-     			{
-     				spells[j] = champs.getChampList()[i].getSpells()[j];
-     			}
-     			*/
-     			/*
-     			//Attributes
-     			//These are a part of the Champion, but are unneeded for this page
-     			int[] attributes = new int[champs.getChampList()[i].getAttributes().length];
-     			for(int j = 0; j < attributes.length; j++)
-     			{
-     				attributes[j] = champs.getChampList()[i].getAttributes()[j];
-     			}
-     			*/
+     			
+
      			
      			
      			TextView nameText = (TextView)findViewById(R.id.nameDis);
@@ -1277,7 +1259,7 @@ public class ViewChampions extends ActionBarActivity {
  *     Setting of Spell Info and Spell Info Text
  *     
  *     			
- */
+ *//*
      			
      			//TextView spellsText = (TextView)findViewById(R.id.spellsDis);
      			TextView spellName0Text = (TextView)findViewById(R.id.spellName0Dis);
@@ -1289,7 +1271,7 @@ public class ViewChampions extends ActionBarActivity {
      			TextView spellName6Text = (TextView)findViewById(R.id.spellName6Dis);
      			TextView spellName7Text = (TextView)findViewById(R.id.spellName7Dis);
      			TextView spellName8Text = (TextView)findViewById(R.id.spellName8Dis);
-     			TextView spellName9Text = (TextView)findViewById(R.id.spellName9Dis);
+     			//TextView spellName9Text = (TextView)findViewById(R.id.spellName9Dis);
      			
      			//Costs
      			TextView spellCost0Text = (TextView)findViewById(R.id.spellCost0Dis);
@@ -1349,9 +1331,13 @@ public class ViewChampions extends ActionBarActivity {
 /*
  * Initial Sets for Spells 
  * 
- */
+ *//*
+     			//SpellInfo[] spells = SpellDatabase.champSpells[i];
+     			//spellName0Text.setText(spells[0].getSpellName());
+     			
+     			
      			//Initialize Spell Names
-     			spellName0Text.setText("");
+     			spellName0Text.setText("");			
      			spellName1Text.setText("");
      			spellName2Text.setText("");
      			spellName3Text.setText("");
@@ -1418,18 +1404,13 @@ public class ViewChampions extends ActionBarActivity {
      			
      			
      			//Spells
-     			SpellInfo[] spells = new SpellInfo [champs.getChampList()[i].getSpells().length];
-     			//int numOfSpells = spells.length;
-     			for(int j = 0; j < spells.length; j++)
-     			{
-     				spells[j] = champs.getChampList()[i].getSpells()[j];
-     			}
+     			SpellInfo[] spells = SpellDatabase.champSpells[i];
      			
      			
      			//Spell Name Loop/Setting
      			int nameNum =0;
      			String spellName = "";
-     			for(nameNum = 0; nameNum < spells.length; namNum++)
+     			for(nameNum = 0; nameNum < spells.length; nameNum++)
      			{
      				spellName = spells[nameNum].getSpellName();
      				if(nameNum == 0){
@@ -1462,7 +1443,7 @@ public class ViewChampions extends ActionBarActivity {
      			for(costNum = 0; costNum < spells.length; costNum++)
      			{
      				spellCost = spells[costNum].getCost();
-     				if(!spellCost.equal("")){
+     				if(!spellCost.equals("")){
 	     				if(costNum == 0){
 	     					spellCost0Text.setText("Cost: " +spellCost);
 	     				}else if(costNum == 1){
@@ -1492,24 +1473,24 @@ public class ViewChampions extends ActionBarActivity {
      			for(rangeNum = 0; rangeNum < spells.length; rangeNum++)
      			{
      				spellRange = spells[rangeNum].getSpellRange();
-     				if(!spellRange.equal("")){
+     				if(!spellRange.equals("")){
 	     				if(rangeNum == 0){
 	     					spellRange0Text.setText("Range: " +spellRange);
-	     				}else if(RangeNum == 1){
+	     				}else if(rangeNum == 1){
 	     					spellRange1Text.setText("Range: " + spellRange);
-	     				}else if(RangeNum == 2){
+	     				}else if(rangeNum == 2){
 	     					spellRange2Text.setText("Range: " + spellRange);
-	     				}else if(RangeNum == 3){
+	     				}else if(rangeNum == 3){
 	     					spellRange3Text.setText("Range: " + spellRange);
-	     				}else if(RangeNum == 4){
+	     				}else if(rangeNum == 4){
 	     					spellRange4Text.setText("Range: " + spellRange);
-	     				}else if(RangeNum == 5){
+	     				}else if(rangeNum == 5){
 	     					spellRange5Text.setText("Range: " + spellRange);
-	     				}else if(RangeNum == 6){
+	     				}else if(rangeNum == 6){
 	     					spellRange6Text.setText("Range: " + spellRange);
-	     				}else if(RangeNum == 7){
+	     				}else if(rangeNum == 7){
 	     					spellRange7Text.setText("Range: " + spellRange);
-	     				}else if(RangeNum == 8){
+	     				}else if(rangeNum == 8){
 	     					spellRange8Text.setText("Range: " + spellRange);
 	     				}
      				}
@@ -1521,24 +1502,24 @@ public class ViewChampions extends ActionBarActivity {
      			for(cooldownNum = 0; cooldownNum < spells.length; cooldownNum++)
      			{
      				spellCooldown = spells[cooldownNum].getCoolDown();
-     				if(!spellCooldown.equal("")){
+     				if(!spellCooldown.equals("")){
 	     				if(cooldownNum == 0){
 	     					spellCooldown0Text.setText("Cooldown: " +spellCooldown);
-	     				}else if(CooldownNum == 1){
+	     				}else if(cooldownNum == 1){
 	     					spellCooldown1Text.setText("Cooldown: " + spellCooldown);
-	     				}else if(CooldownNum == 2){
+	     				}else if(cooldownNum == 2){
 	     					spellCooldown2Text.setText("Cooldown: " + spellCooldown);
-	     				}else if(CooldownNum == 3){
+	     				}else if(cooldownNum == 3){
 	     					spellCooldown3Text.setText("Cooldown: " + spellCooldown);
-	     				}else if(CooldownNum == 4){
+	     				}else if(cooldownNum == 4){
 	     					spellCooldown4Text.setText("Cooldown: " + spellCooldown);
-	     				}else if(CooldownNum == 5){
+	     				}else if(cooldownNum == 5){
 	     					spellCooldown5Text.setText("Cooldown: " + spellCooldown);
-	     				}else if(CooldownNum == 6){
+	     				}else if(cooldownNum == 6){
 	     					spellCooldown6Text.setText("Cooldown: " + spellCooldown);
-	     				}else if(CooldownNum == 7){
+	     				}else if(cooldownNum == 7){
 	     					spellCooldown7Text.setText("Cooldown: " + spellCooldown);
-	     				}else if(CooldownNum == 8){
+	     				}else if(cooldownNum == 8){
 	     					spellCooldown8Text.setText("Cooldown: " + spellCooldown);
 	     				}
      				}
@@ -1549,33 +1530,33 @@ public class ViewChampions extends ActionBarActivity {
      			String spellDescription = "";
      			for(descriptionNum = 0; descriptionNum < spells.length; descriptionNum++)
      			{
-     				for(int i = 0; i < spells[descriptionNum].getDescription().length; i++)
+     				for(int o = 0; o < spells[descriptionNum].getDescription().length; o++)
      				{
-     					spellDescription += spells[descriptionNum].getDescription()[i];
-     					if(i != spells[descriptionNum].getDescription().length-1)
+     					spellDescription += spells[descriptionNum].getDescription()[o];
+     					if(o != spells[descriptionNum].getDescription().length-1)
      					{
      						spellDescription += "\n";
      					}
      					
      				}
-     				if(!spellDescription.equal("")){
+     				if(!spellDescription.equals("")){
 	     				if(descriptionNum == 0){
 	     					spellDescription0Text.setText(spellDescription);
-	     				}else if(DescriptionNum == 1){
+	     				}else if(descriptionNum == 1){
 	     					spellDescription1Text.setText(spellDescription);
-	     				}else if(DescriptionNum == 2){
+	     				}else if(descriptionNum == 2){
 	     					spellDescription2Text.setText(spellDescription);
-	     				}else if(DescriptionNum == 3){
+	     				}else if(descriptionNum == 3){
 	     					spellDescription3Text.setText(spellDescription);
-	     				}else if(DescriptionNum == 4){
+	     				}else if(descriptionNum == 4){
 	     					spellDescription4Text.setText(spellDescription);
-	     				}else if(DescriptionNum == 5){
+	     				}else if(descriptionNum == 5){
 	     					spellDescription5Text.setText(spellDescription);
-	     				}else if(DescriptionNum == 6){
+	     				}else if(descriptionNum == 6){
 	     					spellDescription6Text.setText(spellDescription);
-	     				}else if(DescriptionNum == 7){
+	     				}else if(descriptionNum == 7){
 	     					spellDescription7Text.setText(spellDescription);
-	     				}else if(DescriptionNum == 8){
+	     				}else if(descriptionNum == 8){
 	     					spellDescription8Text.setText(spellDescription);
 	     				}
      				}
@@ -1587,33 +1568,33 @@ public class ViewChampions extends ActionBarActivity {
      			String spellStatsPerLevel = "";
      			for(statsPerLevelNum = 0; statsPerLevelNum < spells.length; statsPerLevelNum++)
      			{
-     				for(int i = 0; i < spells[statsPerLevelNum].getStatsPerLevel().length; i++)
+     				for(int h = 0; h < spells[statsPerLevelNum].getStatsPerLevel().length; h++)
      				{
-     					spellStatsPerLevel += spells[statsPerLevelNum].getStatsPerLevel()[i];
-     					if(i != spells[statsPerLevelNum].getStatsPerLevel().length-1)
+     					spellStatsPerLevel += spells[statsPerLevelNum].getStatsPerLevel()[h];
+     					if(h != spells[statsPerLevelNum].getStatsPerLevel().length-1)
      					{
      						spellStatsPerLevel += "\n";
      					}
      					
      				}
-     				if(!spellStatsPerLevel.equal("")){
+     				if(!spellStatsPerLevel.equals("")){
 	     				if(statsPerLevelNum == 0){
 	     					spellStatsPerLevel0Text.setText(spellStatsPerLevel);
-	     				}else if(StatsPerLevelNum == 1){
+	     				}else if(statsPerLevelNum == 1){
 	     					spellStatsPerLevel1Text.setText(spellStatsPerLevel);
-	     				}else if(StatsPerLevelNum == 2){
+	     				}else if(statsPerLevelNum == 2){
 	     					spellStatsPerLevel2Text.setText(spellStatsPerLevel);
-	     				}else if(StatsPerLevelNum == 3){
+	     				}else if(statsPerLevelNum == 3){
 	     					spellStatsPerLevel3Text.setText(spellStatsPerLevel);
-	     				}else if(StatsPerLevelNum == 4){
+	     				}else if(statsPerLevelNum == 4){
 	     					spellStatsPerLevel4Text.setText(spellStatsPerLevel);
-	     				}else if(StatsPerLevelNum == 5){
+	     				}else if(statsPerLevelNum == 5){
 	     					spellStatsPerLevel5Text.setText(spellStatsPerLevel);
-	     				}else if(StatsPerLevelNum == 6){
+	     				}else if(statsPerLevelNum == 6){
 	     					spellStatsPerLevel6Text.setText( spellStatsPerLevel);
-	     				}else if(StatsPerLevelNum == 7){
+	     				}else if(statsPerLevelNum == 7){
 	     					spellStatsPerLevel7Text.setText(spellStatsPerLevel);
-	     				}else if(StatsPerLevelNum == 8){
+	     				}else if(statsPerLevelNum == 8){
 	     					spellStatsPerLevel8Text.setText(spellStatsPerLevel);
 	     				}
      				}
@@ -1621,7 +1602,7 @@ public class ViewChampions extends ActionBarActivity {
      			}     			
      			
      			
-     			
+     			*/
              
      }
 
